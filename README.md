@@ -4,4 +4,4 @@
 
 ## Anotações
 
-- [1° Semestre](1° Semestre/S.O. e Redes de Computadores/00 - Disciplina.md)
+- (1° Semestre)[1° Semestre/S.O. e Redes de Computadores/00 - Disciplina.md]
