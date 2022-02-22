@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MÉDIA ALUNDO</title>
+</head>
+<body>
+    <h1 align="center">Média das notas</h1>
+
+    <label for="nota1">Nota 1</label>
+    <input type="text" id="nota1" name=" nota" value="">
+
+    <label for="nota2">Nota 2</label>
+    <input type="text" id="nota2" name=" nota" value="">
+
+    <button onclick="media()">Calcular Média</button>
+
+    <script>
+        function media(){
+            var nota1=parseFloat(document.getElementById("nota1").value);
+            var nota2=parseFloat(document.getElementById("nota2").value);
+
+            var media=(nota1+nota2)/2;
+
+            if (media >=7)  {
+                 alert("Parabéns,aprovado! :)\n" +media);            
+            }   else {
+                    alert("REPROVADO ! :(");
+            }
+
+        }
+    </script>
+
+</body>
+</html>
