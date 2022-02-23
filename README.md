@@ -6,5 +6,5 @@
 
 ### Anotações
 
-- [Materiais Extra Curriculares](Extra%20Curricular/Resume.md)
-- [1° Semestre](1°%20Semestre/Resume.md)
+- [Materiais Extra Curriculares](Extra%20Curricular)
+- [1° Semestre](1°%20Semestre)
