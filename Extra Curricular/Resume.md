@@ -1,3 +1,4 @@
+## Atividades Extra-Curriculares
 
 - Tecnologia
     - [02: Teams - Iniciante](https://www.ev.org.br/cursos/microsoft-office-365-conhecendo-o-teams)
@@ -14,8 +15,6 @@
     - [14: Qualidade de Vida e Trabalho](https://www.ev.org.br/cursos/qualidade-de-vida-e-trabalho)
     - [08: Regulação da Preocupação e Ansiedade](https://www.ev.org.br/cursos/regulacao-da-preocupacao-e-da-ansiedade)
 
-
-
 - Softskils
     - [03: Discutir e Argumentar](https://www.coursera.org/learn/understanding-arguments?utm_source=blog&utm_campaign=rc_blogpost)
     - [05: Desenvolvimento Pessoal (Plano de Carreira, Networking)](https://www.ev.org.br/cursos/desenvolvimento-profissional)
@@ -25,3 +24,9 @@
     - [15: Termos de Uso e Privacidade](https://educacao-executiva.fgv.br/cursos/online/curta-media-duracao-online/termos-de-uso-e-politicas-de-privacidade)
     - [16: Inovação e Criatividade](https://ead.sestsenat.org.br/cursos/inovacao-e-criatividade/)
     - [17: Responsabilidade Social e Sustentabilidade](https://www.ev.org.br/cursos/responsabilidade-social-e-sustentabilidade)
+
+- Certificações Microsoft
+    - Microsoft certifications
+    - Escolher a certificação
+    - Fazer o cadastro com uma conta
+    - Linkar o email institucional em "Exaims Disccount"
