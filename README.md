@@ -8,3 +8,5 @@
 
 - [Materiais Extra Curriculares](Extra%20Curricular)
 - [1° Semestre](1°%20Semestre)
+
+> [Clique aqui](Pendencias.md) para ver as Pendências do Projeto

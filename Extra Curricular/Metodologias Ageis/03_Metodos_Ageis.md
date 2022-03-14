@@ -1,5 +1,5 @@
 
-# Chappeu da Agilidade
+# Metódos Ágeis
 
 - Consiste nas Ferramenteas e Metodologias que utilizam os
 Fundamentos/Conceitos/Praticas da Metodologia Agil
