@@ -4,6 +4,8 @@
 
 - Desenvolvimento Pessoal
   - [Bem Estar Digital - Google Ateliê Digital](G.A%20-%20Bem%20Estar%20Digital.md)
+- Desenvolvimento Pessoal
+    - [Metodologias Ágeis, Kanban, Scrum](Metodologias%20Ageis)
 
 
 ### Cursos Futuros
