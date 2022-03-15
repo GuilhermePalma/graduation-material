@@ -10,3 +10,4 @@
   - [ ] [03 - Metódos Ageis](Extra%20Curricular/Metodologias%20Ageis/03_Metodos_Ageis.md)
   - [ ] [04 - Scrum](Extra%20Curricular/Metodologias%20Ageis/04_Scrum.md)
   - [ ] [05 - Kanban](Extra%20Curricular/Metodologias%20Ageis/05_Kanban.md)
+  - [ ] [01 - Introdução a Internet](1°%20Semestre/S.O.%20e%20Redes%20de%20Computadores/NetAcad/01-Introducao_Internet.md)
