@@ -121,5 +121,44 @@
 - Com a interconexão dessas redes, é necessario um protocolo de endereçamento dos dispositivos. O mais comum é o IPv4, porem já foi desenvolvido o IPv6 como substituto (mas eles podem coexistirem juntos).
 
 
+### Endereços
 
-> Continuar no Capitulo 3.3 Cisco
+- Endereço Fisico: Se trata do endereçamento MAC. Ele é fixo e que não há alteração com o passar do tempo.
+- Endereço Logico:  São os endereços atribuidos aos integrantes da rede local.
+  - É dividido em duas partes:
+    - Rede: Representa a Rede Local
+    - Host: Representa o Individuo na Rede Local
+
+### Gerenciamento da Rede
+
+- O Trafego IP permite que os dispositivos se comuniquem em uma rede. Para isso, é necessario alguns dispositivos:
+  - Camada de Acesso
+    - Nivel mais basico da rede que fornece a conexão dos hosts com as redes locais.
+      - Comunicações entre hosts, arquivos compartilhados e da impressora
+    - primeira camada de conexão com a rede Ethernet
+    - Utilizada para transmitir mesnagens à outra rede local
+    - Permite que os hosts acessem determinados serviços da rede
+    - Normalmente são Switches ou Acess Point
+  - Camada de Distribuição: Fornce uma conexão para redes separadas, controlando o tipo e quantidade de trafego entre as camadas. Normalmente são Switches melhores e Roteadores
+  - Camada Central: 
+    - Transmite grandes quantidaqdes de dados entre as redes finais
+    - É a camada backbone, uma camada de alta velocidade de conexão que pode possuir camdadas de conexões redundantes que atuam como Backup.
+    - Composta por Roteadores e Siwtches de alta qualidade
+- Hubs (Camada de Acesso)
+  - Aparalhos inicialmente desenvolvidos com a evolução da Ethernet e otimização das interconexões entre os dispositivos
+  - Permite a interconexão entre os hosts de uma rede
+  - Todos os dispositivos conectados ao Hub compartilham as mensagens enviadas e a largura da banda disponivel.
+    - Os aparelhos apenas tem acesso as mensagens que foram destinados para eles
+    - Só é permtido enviar uma mensagem de cada vez pelo Hub
+      - Caso haja mais de uma mensagem ao mesmo tempo, haverá a colisão. 
+      - A colisão torna os dados solicitados ilevgiveis, necessitando de uma retransmissão. Retransmissões excessivas de dados, reduzem e congestionam a rede
+- Switches Ethernet (Camada de Acesso)
+  - São aparelhos que aceita e decodificam quadros para ler o enderço fisico (MAC) da mensagem
+  - Eles possuem uma lista dos endereços MAC e suas portas ativas
+    - Quando as mensagens são enviadas, ele verifica se a mensagem está nessa lista. Caso esteja, o switch cira uma conexão exclusiva para os dois hosts se comunicarem.
+    - Os demais hosts conectados, não recebm as mensagens ou compartilham da largura da banda.
+    - Esse processo suporta comunicações simultaneas, diminuindo os numeros de possiveis colisões
+    - Caso uma mensagem seja transmitida para um dispositivo que não está registrado na rede, o switch envia mensagens comparando o enderço (processo chamado de inundação) do dispositivo com o destino da mensagem. Caso encontre o endereço, apenas ele ira conseguir interpretar a mensagem
+    - A cada comunicação de origem e destino, os enderços MAC são salvos pelos swicth, ocorrrendo uma atualização dinamica
+
+> Continuar no Topico 3.4.3
