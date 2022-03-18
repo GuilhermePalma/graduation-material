@@ -1,3 +1,52 @@
+## Resumo
+
+Para que uma rede realize copartilhe informações, é necessario 3 Elementos: A Origem, O Destiono e o Metodo em que a mensagem irá Trafgar. Além disso, para que a mensagem seja interpretada da forma correta é necessario tambem que eles conversem em um Padrão em Comum.
+
+Com isso, para se manter um padrão em uma mensagem e garantir a comunicação, os Protocolos são utilizados. Normalmente são empilhados em pilhas e atuam de forma independente. Em um grau macro, cria-se um Modelo de Protocolo, em que se agrupar uma estrutura de protocolos que dependem de outros conjuntos de protocolos. Além disso, os protocolos possuem alguns atributos importantes, como:
+- Temporização: Tempo, Velocidade e Quantidade de Dados transmitidos pelo Host
+- Tamanho da Mensagem: Tamanho da mensagem e os dados que são possiveis de serem enviados
+- Encapsulamento: Dados da Mensagem, como destino, origem
+- Formato da Mensage: É o formato e estutura da mensagem conforme o metodo utilizado
+- Codificaçã: A conversão da mensagem em Bit que são convertidas em Ondas ou Pulsos Eltricos ou de Luz
+- Padrão da Mensagem: Comportamento da transmissão da Mensagem 
+
+Já os Modelos em Camdada são utilizados para visualizar os protocolos em uma comunicação, representandod e forma mais detalhada a opreção realizada em cada camada e como se da a sua interação. Por meio disso, é possivel determinar a atuação em cada nivel da camada, permitir que diferentes dispositivos se conectem (caso utilizem o mesmo modelo) e evoluir a tecnologia em segmentos das camadas.
+
+O Modelo TCP/IP é um Modelo em Camada que mostra como a occorre a inter-oprecação dos protocolos na Internet, sendo dividido em 4 Camadas:
+- Aplicação: Dados do Usuario, Controle de Codificação e Dialogo
+- Transporte: Comunicação entre hosts
+- Internet: Define o melhor caminho na rede
+- Acesso à rede: Controle do Hardware e meios fisicos da rede
+
+Os Modelos de Referencia descrevem as funções que devem ser concluidas em cada camada, porem deixam de fora como isso deve ser realizado, trazendo uma maior compreensão dos processos de comunicação da rede. Ele é dividido em 7 Niveis, organizando do nivel mais externo (Hardware) para o mais interno (Softwares)
+- Fisica: São os meios fisicos (cabos), mecanicos (ondas, pulsos), funcionais (hubs, repetidores) do gerenciamento dos dispositivos
+- Enlace (Link) de Dados: São os metodos que codificam a comunicação entre os dispositivos
+- Rede: Serviço de Troca de Dados entre os dispositivos comuns
+- Transporte: Define como aos serviços funcionarão nas comunicações
+- Sessão: Disponibiliza os serviços para a camada de aplicação e gerencia a troca de dados
+- Apresentação: Exibe a representação dos dados transmitidos
+- Aplicação: Fornece a conectividade ponta a pnta entre a rede
+
+Por isso, a definição de padrões são importantes, pois permite que diferentes aparelhos realizem conexões entre si . Com isso, durgiu o IEEE (Instituto de Engenheiros Eletricistas e Eletronicos), que são responsaveis porrealizar melhorias na Ethernet.
+
+Outro ponto importante, é o Design Hierarquico de Rede, que se trata de uma rede que seegue um certo padrão para interconectar a rede Ethernet ou até mesmo, dividir redes de Grande Porte. Nesse tipo de rede o IPv4 e o IPv6 são utilizados para localizar os dispositivos em determinadas redes.
+
+As Mensagens transmitidas pela rede são chamados de Quadros. Ele são encapsuladads da seguinte forma sequencial:
+- Preambulo: Bits (0 ou 1) que definem a sincronia e temporização
+- SFD: Marca o Fim do Preambulo e Inicio do Quadro
+- Endereço MAC de Destino
+- Endereço MAC de Origem
+- Comprimento da Mensagem ou Tipo do Protocolo Utilizado
+- Dados Encapsulados: Se Trata da mensagem em si, variando de 46 à 1500 Bytes (Conjunto de 8 Bits, forma um Byte. Caso ultrapasse o limite, a mensagem é dividida)
+- FCS: 4 Bytes de Verificas que são recalculados para a autenticidade da mensagem
+
+> Continuar Resumo: [Gerenciamento da Rede](#-gerenciamento-da-Rede)
+
+
+Para as comunicações entre os dispositivos, é necessario o endereço MAC de Origem e Destino dos dispositivos 
+
+
+### Redes e suas Comun icações
 
 - As redes tem como objetivo fornecer metodos de comunicações e compartilhamento de informações
   - A comunicação é iniciada por meio de uma mensagem enviada de um individio ou dispositivo para outro
@@ -25,9 +74,6 @@
   - Padrão da Mensagem: Define o comportamento da mensagem. Algumas mensagens só são enviadas após ter a ultima ter sido recebida
     - Padrões de cominucações são definidos para que as comunicações sigam um padrão e concluam-se com exito.
       - Cada padrão novo aprovado, é registrado em um documento chamado Solicitação de Comentários (RFC). As RFCs de padrões da Internet são gerenciadas pelo IETF (Internet Engineering Task Force)
-
-### Protocolos
-
 - Para comunicações diversas entre hosts, são encessarios diversos protocolos no software e Hardware.
   - Esses protocolos são agrupados em pilhas. Normalmente, os prodtocolos mais externos na pilha, dependem dos serviços dos protocolos inferiores
   - Esses protocolos, permite que cada pilha atue de forma idependente das demais
@@ -38,7 +84,7 @@
 - Eles ajudam a visualizar o funcionamento de diversos protocolos utilizados em uma comunicação
 - Nele é representado a operação realizada em cada camada e suas interações
 - Vantagens
-  - Ajudam à elaborar protocolos, uma vezque eles possuem infromações determinadas das suas atuações em cada camada
+  - Ajudam à elaborar protocolos, uma vez que eles possuem infromações determinadas das suas atuações em cada camada
   - Estimula a competição, fazendo com que dversos apralhos consigam utiliza-los
   - Permite melhorias tecnologicas em um nível das camadas
   - Fornece um idioma comum para a descrição de funções e habilidades da rede
