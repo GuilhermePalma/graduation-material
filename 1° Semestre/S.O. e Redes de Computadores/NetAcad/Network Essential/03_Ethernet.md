@@ -1,3 +1,5 @@
+# Introdução à Protocolos, Ethernet e Comunicações entre Redes
+
 ## Resumo
 
 Para que uma rede realize copartilhe informações, é necessario 3 Elementos: A Origem, O Destiono e o Metodo em que a mensagem irá Trafgar. Além disso, para que a mensagem seja interpretada da forma correta é necessario tambem que eles conversem em um Padrão em Comum.
@@ -8,7 +10,7 @@ Com isso, para se manter um padrão em uma mensagem e garantir a comunicação, 
 - Encapsulamento: Dados da Mensagem, como destino, origem
 - Formato da Mensage: É o formato e estutura da mensagem conforme o metodo utilizado
 - Codificaçã: A conversão da mensagem em Bit que são convertidas em Ondas ou Pulsos Eltricos ou de Luz
-- Padrão da Mensagem: Comportamento da transmissão da Mensagem 
+- Padrão da Mensagem: Comportamento da transmissão da Mensagem
 
 Já os Modelos em Camdada são utilizados para visualizar os protocolos em uma comunicação, representandod e forma mais detalhada a opreção realizada em cada camada e como se da a sua interação. Por meio disso, é possivel determinar a atuação em cada nivel da camada, permitir que diferentes dispositivos se conectem (caso utilizem o mesmo modelo) e evoluir a tecnologia em segmentos das camadas.
 
@@ -43,7 +45,7 @@ As Mensagens transmitidas pela rede são chamados de Quadros. Ele são encapsula
 > Continuar Resumo: [Gerenciamento da Rede](#-gerenciamento-da-Rede)
 
 
-Para as comunicações entre os dispositivos, é necessario o endereço MAC de Origem e Destino dos dispositivos 
+Para as comunicações entre os dispositivos, é necessario o endereço MAC de Origem e Destino dos dispositivos
 
 
 ### Redes e suas Comun icações
@@ -245,7 +247,7 @@ Para as comunicações entre os dispositivos, é necessario o endereço MAC de O
 
 ### Roteadores e Comunicações Externas
 
-- Todo Host recebe o endereço IPv4 do roteador por meio do gateway padrão (Endereço da interface do roteador conectado à rede do host).  Com o Gateway padrão o host consegue realizar o ARP para determinar o Endereço MAC do roteador
+- Todo Host recebe o endereço IPv4 (atribuido pela interface de rede instalada no dispositivo, a NIC) do roteador por meio do gateway padrão (Endereço da interface do roteador conectado à rede do host).  Com o Gateway padrão o host consegue realizar o ARP para determinar o Endereço MAC do roteador
   - Imporante se atentar dos dispositivos estarem com o Gateway Padrão correto para que ocorra as comunicações
 - Dispositivos fora da rede local são chamados de Hosts Externos
 - Para comunicações externas, é necessaria de roteadores e roteamento
