@@ -19,3 +19,5 @@
   - [ ] [05 - Kanban](Extra%20Curricular/Metodologias%20Ageis/05_Kanban.md)
   - [ ] [01 - Introdução a Internet](1°%20Semestre/S.O.%20e%20Redes%20de%20Computadores/NetAcad/01-Introducao_Internet.md)
   - [ ] [02 - Redes no Dia-DIa](1°%20Semestre/S.O.%20e%20Redes%20de%20Computadores/NetAcad/02-Redes_no_dia_dia.md)
+
+- Adicionar Pendencias do Capitulo 3 e 4 da Cisco (Menu, Negrito e Resumo)
