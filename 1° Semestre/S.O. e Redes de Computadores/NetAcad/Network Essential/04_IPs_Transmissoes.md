@@ -159,4 +159,9 @@
   - Pode Omitir os 0 à esquerda em qualquer sessão
   - Omitir um segmento que só possui 0, transformando esse segmento em dois-pontos em dobro (::). Só pode ser usado uma vez no endereço
 
-> Continuar 4.5.2.4
+
+---
+
+[<--- Pagina Anterior *(Capitulo 3.2: Comunicação na Rede e seus Dispositivos)*](03.2_Dispostivos_Comunicacoes.md)
+
+[Proxima Pagina *(Capitulo 4: IPs e Transmissão na Rede)* --->](04_IPs_Transmissoes.md)

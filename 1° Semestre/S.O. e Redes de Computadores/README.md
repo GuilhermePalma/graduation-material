@@ -10,3 +10,7 @@
 
 ### Abreviações
 - N.E = Network Essentials
+
+---
+
+[<--- Pagina Anterior *(Pagina: Primeiro Semestre)*](../README.MD)

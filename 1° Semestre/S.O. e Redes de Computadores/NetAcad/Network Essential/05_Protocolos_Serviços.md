@@ -65,3 +65,10 @@
 - Usa a tecnologia VoIP (Voice over IP): Converte sinais da voz analogica em digital
   - Dados são convertidos, encapsulados e enviados pela rede
 - Essa chamada para um telefone normal, demanda de um gateway para acessar a rede publica de telefonia comutada (PSTN)
+
+
+---
+
+[<--- Pagina Anterior *(Capitulo 4: IPs e Transmissão na Rede)*](04_IPs_Transmissoes.md)
+
+[Home](README.MD)
