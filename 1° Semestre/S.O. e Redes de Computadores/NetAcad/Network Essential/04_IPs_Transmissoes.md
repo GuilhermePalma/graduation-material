@@ -164,4 +164,4 @@
 
 [<--- Pagina Anterior *(Capitulo 3.2: Comunicação na Rede e seus Dispositivos)*](03.2_Dispostivos_Comunicacoes.md)
 
-[Proxima Pagina *(Capitulo 4: IPs e Transmissão na Rede)* --->](04_IPs_Transmissoes.md)
+[Proxima Pagina *(Capitulo 5: Protocolos e Serviços na Internet)* --->](05_Protocolos_Serviços.md)
