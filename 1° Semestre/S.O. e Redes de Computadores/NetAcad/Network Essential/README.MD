@@ -11,6 +11,6 @@
 
 ---
 
-[<--- Pagina Anterior *(Certificações Cisco - NET Academy)*](../README.MD)
+[<--- Pagina Anterior *(Certificações Cisco - NET Academy)*](../README.md)
 
 [Pagina Inicial *(Capitulo 1 - Introdução à Internet e Infraestrutura)* --->](01-Introducao_Internet.md)

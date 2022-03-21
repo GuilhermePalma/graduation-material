@@ -13,4 +13,4 @@
 
 ---
 
-[<--- Pagina Anterior *(Pagina: Primeiro Semestre)*](../README.MD)
+[<--- Pagina Anterior *(Pagina: Primeiro Semestre)*](../README.md)
