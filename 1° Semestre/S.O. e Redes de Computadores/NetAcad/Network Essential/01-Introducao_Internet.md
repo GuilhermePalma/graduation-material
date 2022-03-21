@@ -1,6 +1,23 @@
 # Capitulo 1: Introdução à Internet e Infraestrutura
 
-### Resumo
+## Conteudo
+
+- [Resumo](#resumo)
+  - [O que é Internet](#o-que-é-internet)
+  - [Dado](#dado)
+  - [Bit](#bit)
+    - [O que é Bit?](#o-que-é-bit)
+    - [Movimentação](#movimentação)
+    - [Velocidade de Transmissão](#velocidade-de-transmissão)
+  - [Cliente e Servidores](#cliente-e-servidores)
+  - [Infraestrutura](#infraestrutura)
+    - [Tipologia: Peer-to-peer (Ponto a Ponto)](#tipologia-peer-to-peer-ponto-a-ponto)
+    - [Comando ping](#comando-ping)
+    - [Comando Traceroute](#comando-traceroute)
+
+---
+
+## Resumo
 
 A palavra "Internet" se refere ao conjunto de redes inter-conectadas de dispositivos que permitem trocas de infromações entre si.
 
@@ -22,6 +39,7 @@ Alguns comando permitem com que faça a medição do tempo entre essas comunica�
 
 Por fim, a tipologia Peer-to-peer, se trata de uma rede mais simples possivel, em que é realizada a conexão entre dois computadores, permitindo com que eles troquem serviços e dados. É uma tipologia simples, porem não é possivel ser aplicado quando se tem muitos dispositivos. Tambem pode ocorrer um baixo desempenho por conta dos computadores desempenhar funções tanto de clientes como servidores e não é nada segura.
 
+---
 
 ### O que é Internet
 

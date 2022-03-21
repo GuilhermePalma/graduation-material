@@ -1,5 +1,32 @@
 # Capitulo 4: IPs e Transmissão na Rede
 
+
+## Conteudo
+
+- [Resumo](#resumo)
+  - [Endereço Logico IPv4](#endereço-logico-ipv4)
+  - [AND Logico](#and-logico)
+  - [Mascara de Sub-Rede](#mascara-de-sub-rede)
+  - [Endereçamento Classful e Classless](#endereçamento-classful-e-classless)
+  - [Endereço de IPv4 Privado](#endereço-de-ipv4-privado)
+  - [Atribuição de IPv4](#atribuição-de-ipv4)
+  - [Transmissão Unicast](#transmissão-unicast)
+  - [Transmissão Broadcast](#transmissão-broadcast)
+  - [Transmissão Multicast](#transmissão-multicast)
+  - [Designação de Endereços](#designação-de-endereços)
+  - [Serviço DHCP](#serviço-dhcp)
+  - [Gateway](#gateway)
+  - [IPv6](#ipv6)
+    - [Formatação IPv6](#formatação-ipv6)
+
+---
+
+## Resumo
+
+> Criar Resumo para Esse Capitulo
+
+---
+
 ### Endereço Logico IPv4
 
 - É atribuido a cada dispositivo pela interface de rede (NIC)
@@ -151,7 +178,7 @@
   - Host cria sua ID e concede à si um endereço unicast global roteavel
 - Endereço Local de Link: Usado para comunicar com dispositivos na mesma rede
 
-### Formatação IPv6
+#### Formatação IPv6
 
 - Apenas há a adição de 1 e 0 nos endereços de origem e destino
 - São escritos como um String com valores hexadeciamais que facilitam a legibilidade

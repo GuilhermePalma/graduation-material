@@ -1,6 +1,21 @@
 # Capitulo 2: Redes no Dia a Dia
 
-### Resumo
+## Conteudo
+
+- [Resumo](#resumo)
+  - [Dispositivos Moveis](#dispositivos-moveis)
+  - [Conectividade](#conectividade)
+  - [IP, Mascara e Gateway](#ip-mascara-e-gateway)
+  - [Representações da Rede](#representações-da-rede)
+  - [As Midias de Rede](#as-midias-de-rede)
+    - [Par Trançado](#par-trançado)
+    - [Comunicação Usando os Cabos UTP](#comunicação-usando-os-cabos-utp)
+    - [Cabo Coaxial](#cabo-coaxial)
+    - [Fibra Optica](#fibra-optica)
+
+---
+
+## Resumo
 
 Hoje em dia há diferentes recursos que podem ser utilizados para se manter conectado com o mundo.
 - Utilização das ondas de radio, tanto para comunicações por mensagens e ligações, como por Wi-Fi
@@ -26,6 +41,7 @@ Para realizar a comunicação dos aparelhos entre si, é utilizado as Midias de 
 
 Por fim, para escolher a Midia de Rede recomendada à cada cenário, é necessario avaliar: a distancia em que a transmissão irá ocorrer, o ambiente que será instalado, a quantidade de dados e velocidade necessaria para a transmissão, o custo e o modo de intalação dessa midia.
 
+---
 
 ### Dispositivos Moveis
 
