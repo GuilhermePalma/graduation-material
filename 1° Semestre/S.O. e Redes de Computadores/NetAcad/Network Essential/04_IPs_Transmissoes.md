@@ -86,7 +86,7 @@
 ### Transmissão Broadcast
 
 - Enviam pacotes para todos os hosts da rede usando um endereço de broadcast da rede
-- Pacote contem o IPv4 do destino, contendo apenas 1 no IP (Isso signidica todos os hosts daquela rede)
+- Pacote contem o IPv4 do destino, sendo 1.1.1.1 no IP (Isso signidica todos os hosts daquela rede)
 - Muitos protocolos de rede usam esse metodo
 - O host ao receber um broadcast, trata a mensagem como se fosse direcionada à ele
 - Pode ocorrer de forma direcionada  ou limitada.

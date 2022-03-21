@@ -1,4 +1,4 @@
-# Redes no Dia a Dia
+# Capitulo 2: Redes no Dia a Dia
 
 ### Resumo
 
@@ -6,24 +6,25 @@ Hoje em dia há diferentes recursos que podem ser utilizados para se manter cone
 - Utilização das ondas de radio, tanto para comunicações por mensagens e ligações, como por Wi-Fi
 - Transmissões de sinais via satelite (GPS) para localização
 - Criação de pequenas redes e trocas de dados, utilizando o Blootooth
+- Utilização de NFC para Pagamentos via celular
 
 Com isso, exite uma divisão entre os aparelhos que trocam os dados (Hosts), os dispositivos que controlam e movimentam esse trafego (Dispositivos de Rede/Intermediarios) e os meios que essa comunicação ocorre (Midia de Rede).
 
-Para que essa comunicação ocorra de forma controlada, é utilizada a placa de Ethernet NIC que cada uma possui um endereço unico, chamado de MAC. Além disso, possuem alguns recursos para essa omunicação
+Para que essa comunicação ocorra de forma controlada, é utilizada a placa de Ethernet NIC que cada uma possui um endereço unico, chamado de MAC. Além disso, possuem alguns recursos para essa comunicação
 - Endereço de IP para a identificação do computador na rede
 - Mascara de Sub-Rede que identifica em que rede o Dispositivo está
 - Gateway Padrão que identifica o dispositivo que o Host utiliza para sua conexão
 
-Alem disso, é necessario alguns serviços e processos que permitam com que essa comunicação ocorra. Um dele é o servidor DNS, que realiza a conversão de dominios/urls em endereços de IP. Outro é o servidor DHCP, utilizado gerar um pool de endereços para as solicitações.
+Alem disso, é necessario alguns serviços e processos que permitam com que essa comunicação ocorra. Um dele é o servidor DNS, que realiza a conversão de dominios/urls em endereços de IP. Outro é o servidor DHCP, utilizado para gerar um pool de endereços para as solicitações.
 
-Para manter toda a rede bem organizada, é necessario um planejamento. Nesse planejamento é utilizado o Diagrama de Topologia Fisico, em que é descrito a parte da arquitetura e como essa rede será estruturada, deixanod de lado as configurações e especificidades dos dispositivos. Enquanto o Diagrama de Topologia Logica, é responsavel pela descrição das especificidades dos dispositivos, como o range de IP, Mascara de Sub-Rede, Sotwares de Transmissões e Solicitações de recursos
+Para manter toda a rede bem organizada, é necessario um planejamento. Nesse planejamento é utilizado o Diagrama de Topologia Fisico, que é descrito a parte da arquitetura e como essa rede será estruturada, mas deixando de lado as configurações e especificidades dos dispositivos. Enquanto o Diagrama de Topologia Logica, é responsavel pela descrição das especificidades dos dispositivos, como o range de IP, Mascara de Sub-Rede, Softwares de Transmissões e Solicitações de recursos
 
-Para realizar a comunicação dos aparelhos entre si, é utilizado as Midias de Rede. Elsas são dividias em alguns tipos:
-- Par Trançado: Cabo que permite a comunicação entre os dispositivos. Ele é um cabo trançado, em que seus fios possuem cores e um determinado padrão para formar as pontas para que a placa Ethernet consiga enviar e receber as solcitações. Alem disso, é mais facil de manipular, porem tem algumas limitações em relação à qualidade das transmissões e transferencias.
+Para realizar a comunicação dos aparelhos entre si, é utilizado as Midias de Rede. Elas são dividias em alguns tipos:
+- Par Trançado: Cabo que permite a comunicação entre os dispositivos. Ele é um cabo trançado, em que seus fios possuem cores e um determinado padrão para formar as pontas para que a placa Ethernet consiga enviar e receber as solcitações. Esse cabo é sucetivel à interferencias eletricas, por isso, exite uma versão blindada do cabo. Alem disso, a manipulação é mais simples, porem tem algumas limitações em relação à qualidade das transmissões e transferencias.
 - Cabo Coaxial: Esse cabo é utilizado por Operadoras de TV/Internet e Comunicações via satelite. Ele garante comunicações de alta frequencia, transmitindo dados por pulsos eletricos, contendo uma camada de blindagem, e um adpatador em sua ponta para a conexão.
 - Fibra Optica: É um cabo que realiza as transmissões por pulso de luz, tendo uma maior resistibilidade à ações do ambiente e não sofrendo interferencias eletricas. É utilizados para conexões de alta velocidade e para longas distancias.
 
-Por fim, para escolher a Midia de Rede recomendada à cada cenario, é necessario avaliar: a distancia em que a transmissão irá ocorrer, o ambiente que será instalado, a quantidade de dados e velocidade necessaria para a transmissão, o custo e o modo de intalação dessa midia.
+Por fim, para escolher a Midia de Rede recomendada à cada cenário, é necessario avaliar: a distancia em que a transmissão irá ocorrer, o ambiente que será instalado, a quantidade de dados e velocidade necessaria para a transmissão, o custo e o modo de intalação dessa midia.
 
 
 ### Dispositivos Moveis

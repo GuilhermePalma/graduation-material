@@ -2,13 +2,15 @@
 
 ### Resumo
 
-A pavara "Internet" se refere ao conjunto de redes inter-conectadas de dispositivos que permitem trocas de infromações entre si.
+A palavra "Internet" se refere ao conjunto de redes inter-conectadas de dispositivos que permitem trocas de infromações entre si.
 
 As Redes podem ser de diferentes tipos, tamanhos e estrutura. Nessas redes, são econtrados alguns tipos de aparelhos, como os Dispositivos Fianis - são os dispostivos de origem/destino, tambem chamados de hosts -, Dispositivos Intermediarios - aparelhos que na maioria fazem o controle de serviços, processos e dispositivos na rede - e as Midias de Rede - são os tipos e modos de conexão com a Internet.
 
-Nas redes são trafegados os dados no formato de bits. Esses bits assume o valor de 0 ou 1 e permitem que as informações reais, como texto, imagens e outros, sejam transmitidos pelos dispositivos. Esse trafego pode ocorrer por meio de impulsos eletricos - impulsos eletricos transmitidos por meio de fios ou cabos -, impulsos de luz ou por meio de ondas eletronicas.
+Nas redes são trafegados os dados no formato de bits. Esses bits assumem o valor de 0 ou 1 e permitem que as informações reais, como texto, imagens e outros, sejam transmitidos pelos dispositivos. Esse trafego pode ocorrer por meio de impulsos eletricos, impulsos de luz ou
+por meio de ondas eletronicas.
 
-A velocidade maxima de que um dispositivo pode transeferir dados para outro, é determinada conforme a Largura da Banda contratada. Enquanto a velocidade real que essa transmissão ocorre, é chamada de produtividade.
+Já em relação à velocidade maxima de que um dispositivo pode transeferir dados para outro, é determinada conforme a Largura da Banda contratada. Enquanto a Velocidade Real que essa
+transmissão ocorre, é chamada de produtividade.
 
 A velocidade da Transmissão é determinada conforme a Largura da Banda. Conforme a interconexão das redes de internet, a velocidade sempre será maior que a menor largura de banda da comunicação.
 

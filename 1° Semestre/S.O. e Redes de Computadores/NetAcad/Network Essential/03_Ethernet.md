@@ -1,20 +1,20 @@
-# Introdução à Protocolos, Ethernet e Comunicações entre Redes
+# Capitulo 3: Introdução à Protocolos, Ethernet e Comunicações entre Redes
 
 ## Resumo
 
-Para que uma rede realize copartilhe informações, é necessario 3 Elementos: A Origem, O Destiono e o Metodo em que a mensagem irá Trafgar. Além disso, para que a mensagem seja interpretada da forma correta é necessario tambem que eles conversem em um Padrão em Comum.
+Para que uma rede realize copartilhe informações, é necessario 3 Elementos: A Origem, O Destino e o Metodo em que a mensagem irá Trafgar. Além disso, para que a mensagem seja interpretada da forma correta é necessario tambem que eles conversem em um Padrão em Comum.
 
 Com isso, para se manter um padrão em uma mensagem e garantir a comunicação, os Protocolos são utilizados. Normalmente são empilhados em pilhas e atuam de forma independente. Em um grau macro, cria-se um Modelo de Protocolo, em que se agrupar uma estrutura de protocolos que dependem de outros conjuntos de protocolos. Além disso, os protocolos possuem alguns atributos importantes, como:
 - Temporização: Tempo, Velocidade e Quantidade de Dados transmitidos pelo Host
 - Tamanho da Mensagem: Tamanho da mensagem e os dados que são possiveis de serem enviados
 - Encapsulamento: Dados da Mensagem, como destino, origem
 - Formato da Mensage: É o formato e estutura da mensagem conforme o metodo utilizado
-- Codificaçã: A conversão da mensagem em Bit que são convertidas em Ondas ou Pulsos Eltricos ou de Luz
+- Codificação: A conversão da mensagem em Bit que são convertidas em Ondas ou Pulsos Eletricos ou de Luz
 - Padrão da Mensagem: Comportamento da transmissão da Mensagem
 
-Já os Modelos em Camdada são utilizados para visualizar os protocolos em uma comunicação, representandod e forma mais detalhada a opreção realizada em cada camada e como se da a sua interação. Por meio disso, é possivel determinar a atuação em cada nivel da camada, permitir que diferentes dispositivos se conectem (caso utilizem o mesmo modelo) e evoluir a tecnologia em segmentos das camadas.
+Já os Modelos em Camada são utilizados para visualizar os protocolos em uma comunicação, representando de forma mais detalhada a operação realizada em cada camada e como se da a sua interação. Por meio disso, é possivel determinar a atuação em cada nivel da camada, permitir que diferentes dispositivos se conectem (caso utilizem o mesmo modelo) e evoluir a tecnologia em segmentos das camadas.
 
-O Modelo TCP/IP é um Modelo em Camada que mostra como a occorre a inter-oprecação dos protocolos na Internet, sendo dividido em 4 Camadas:
+O Modelo TCP/IP é um Modelo em Camada que mostra como a occorre a inter-operação dos protocolos na Internet, sendo dividido em 4 Camadas:
 - Aplicação: Dados do Usuario, Controle de Codificação e Dialogo
 - Transporte: Comunicação entre hosts
 - Internet: Define o melhor caminho na rede
@@ -29,9 +29,9 @@ Os Modelos de Referencia descrevem as funções que devem ser concluidas em cada
 - Apresentação: Exibe a representação dos dados transmitidos
 - Aplicação: Fornece a conectividade ponta a pnta entre a rede
 
-Por isso, a definição de padrões são importantes, pois permite que diferentes aparelhos realizem conexões entre si . Com isso, durgiu o IEEE (Instituto de Engenheiros Eletricistas e Eletronicos), que são responsaveis porrealizar melhorias na Ethernet.
+Por isso, a definição de padrões são importantes, pois permite que diferentes aparelhos realizem conexões entre si. Com isso, surgiu o IEEE (Instituto de Engenheiros Eletricistas e Eletronicos), que são responsaveis por realizar melhorias na Ethernet.
 
-Outro ponto importante, é o Design Hierarquico de Rede, que se trata de uma rede que seegue um certo padrão para interconectar a rede Ethernet ou até mesmo, dividir redes de Grande Porte. Nesse tipo de rede o IPv4 e o IPv6 são utilizados para localizar os dispositivos em determinadas redes.
+Outro ponto para garantir uma padronização, é o Design Hierarquico de Rede. Ele se trata de uma rede que segue um certo padrão para interconectar a rede Ethernet ou até mesmo, dividir redes de Grande Porte. Nesse tipo de rede o IPv4 e o IPv6 são utilizados para localizar os dispositivos em determinadas redes.
 
 As Mensagens transmitidas pela rede são chamados de Quadros. Ele são encapsuladads da seguinte forma sequencial:
 - Preambulo: Bits (0 ou 1) que definem a sincronia e temporização
