@@ -2,13 +2,13 @@
 
 ## Conteudo
 
-> Aguardando Conclusã do Curso
+> Aguardando Conclusão do Curso
 
 ---
 
 ## Resumo
 
-O GIT é um software de versionamento de codigo, que permite que trabalhos sejam organizados e disponibilizado akterações em versõs. 
+O GIT é um software de versionamento de codigo, que permite que trabalhos sejam organizados e disponibilizado akterações em versõs.
 Dessa forma, organiza e facilita o trabalho em grupo em um projeto.
 
 GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
@@ -19,7 +19,7 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
 
 ### Introdução ao Terminal
 
-- GUI: Software que permite a Interação com a Interface Grafica 
+- GUI: Software que permite a Interação com a Interface Grafica
 - CLI: Software que permite a Interação com a Linha de Comando (```Terminal```)
 
 - SHA1: É um conjunto de criptografia que atuam em arquivos a partir de um cunjunto de funções **hash**
@@ -59,7 +59,7 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
     - Aponta para uma Arvore
     - Aponta para um Parente
     - Aponta para um Autor
-    - Possui uma Mensagem 
+    - Possui uma Mensagem
     - Timestamp: leva o Horario/Data do momento em que ele foi criado
 
 
@@ -70,3 +70,56 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
         - O SHA1 do Commit é alterado
 - Como isso, o codigo possui a garantia que aquela é sua ultima alteração
 - O GIT é um Sistema Distribuido: O codigo é hosteado em um Armazenamento em Nuvem (Repositorio Online) que representa a versão final de um projeto
+
+### Chaves SSH
+
+#### Explicação
+
+- Chave SSH: Uma maneira de estabelecer uma conexão segura e criptografa entre 2 dispositivos (nesse caso, o GitHub e a maquina Local)
+  - É utilizado 2 Chaves: Publica e Privada
+- Voltado à utilização de comandos pelo Protocolo SSH
+- Permite que seja realizada Operações no GitHub sem a autenticação via Email/Senha ou Token, utilizando apenas o Protocolo SSH
+  - Ex: Após Registrar as Chaves SSH, é possivel clonar um Repositorio pelo Git Bash sem realizar a Autenticação.
+
+#### Utilização
+
+- Gerando e Cadastrando uma Chave SSH:
+  - Abrir o Git Bash
+  - Executar: `ssh-keygen -t ed25519 -C your_email@email.com`
+  - Dar ``Enter`` ou Especificar uma Outra Pasta que salvará as Chaves
+  - Digitar e Confirmar uma Senha
+    - Irá Gerar 2 Chaves: A Publica (terminada em .pub) e a Privada
+- Cadastrando a Chave SSH no GitHub:
+  - Navegar até a Pasta das Chaves SSH
+  - Obter a Chave Descriptografada executando: ``cat id_your_key_generated.pub``
+  - Acessar o GitHub -> Clicar na Foto de Perfil -> ``Seetings`` -> ``SSH and GPG Keys`` -> ``New SSH Key``
+  - Copiar e Colar o Resultado no Comando Campo ``Key`` do GitHub
+  - Clicar em ``Add SSH Key``
+- Linkando a Chave SSH Localmente:
+  - Inciar o SHH Agent executando: ``eval $(ssh-agent -s)``
+    - SHH Agent é responsavel por Lidar e Gerenciar as SSH Keys
+  - Registrando a Chave no SHH Agent
+    - Entrar na Pasta com as Chaves SSH
+    - Registrar a Chave SSH Privada: ``ssh-add id_your_key_generated``
+    - Entrar a Senha usada na Criação
+  - Ao Utilizar à primeira vez, pode ocorrer um erro de não ter a chave registrada. Apenas digitar ``yes``
+
+### Token de Acesso Pessoal
+
+#### Explicação
+
+- Se Trata de um Token, que possui uma data de expiração, removendo a autenticação via Email/Senha em metodos que utilizam o metodo HTTP
+- Como é salvo localmente, não é muito recomendado para aparelhos compartilhados
+
+#### Utilização
+
+- Criando o Token:
+  - Acessar o GitHub -> Clicar na Foto de Perfil -> ``Seetings`` -> ``Developer Settings`` -> ``Generated New Token``
+  - Definir um **Titulo** ao Token
+  - Definir o Prazo de Expiração -> ``Expiration``
+  - Para utilizar as Funções Basicas do CLI (Terminal), marcar a Opção ``repo``
+  - Verificar quais as outras funcionalidades que são necessarias
+  - Na parte inferior, clique em ``Generation Token``
+  - Copiar o Token (só é possivel visualizar o Token 1 vez)
+
+- Ao Realizar alguma operação que demande a Autenticação (Ex: Clone de Repositorio), Informar no Campo Especifico o Token Criado
