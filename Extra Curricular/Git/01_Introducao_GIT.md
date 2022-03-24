@@ -123,3 +123,33 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
   - Copiar o Token (só é possivel visualizar o Token 1 vez)
 
 - Ao Realizar alguma operação que demande a Autenticação (Ex: Clone de Repositorio), Informar no Campo Especifico o Token Criado
+
+### Estados do Git
+
+- Tracked: O arquivo está sendo observado, ou seja, as alterações serão percebidas
+- Untracked: O arquivo não está sendo observado, ou seja, as alterações não serão percebidas
+- Estado dos Arquivos
+  - Untracked: O GIT não conhece/observa o arquivo
+    - Ao dar um ``git add name_file.txt`` o arquivo se torna conhecido pelo Git e virá um **Staged**
+  - Unmodified (Tracked)
+    - O Git já conhece o arquivo, mas ele não sofreu alterações
+    - Caso o arquivo seja excluido, ele volta ao Untracked
+  - Modified (Tracked): Arquivo que sofreu uma modificação
+    - Quando um arquivo estava **Unmodified** e houve uma alteração
+    - O Git percebe essa alteração pelo SHA1
+    - Ao dar um ``git add name_file.txt`` o arquivo se torna conhecido pelo Git e virá um **Staged**
+  - Staged (Tracked): Arquivos que estão "preparados" para virarem um **commit**
+    - Ao concluir um **commit**, os arquivos retornam ao **Unmodified**
+
+### Comandos
+
+- ``git init``: Inicializa um Repositorio GIT no diretorio
+  - Ao Iniciar um Repositorio, o diretorio ficará dividido em:
+    - Working Directory: Onde estão os Arquivos
+    - Staging Area: Onde estão os arquivos modificados e prontos (atraves do ``git add files.txt``) para virarem um commit
+    - Local Repository: Local em que os commits após serem finalizados são armazenados
+- ``git config --list``: Lista as Configurações do Git da Maquina
+- ``git config --global name.of.proprities "value"``: Define o Item (``name.of.proprities``) com o valor informado
+- ``git config --global --unset propriete``: Apaga os dados do Item (``name.of.proprities``) com o valor informado
+- ``git remote add origin url_of_repository_github``: Linka o Local Repository com o Repositorio do GitHub (Server/Repositorio Online)
+- ``git push origin your_branch``: Envia os Commits do Repositorio Local para o Repositorio Online
