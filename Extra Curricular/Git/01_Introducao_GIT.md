@@ -151,10 +151,10 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
 - ``git config --list``: Lista as Configurações do Git da Maquina
 - ``git config --global name.of.proprities "value"``: Define o Item (``name.of.proprities``) com o valor informado
 - ``git config --global --unset propriete``: Apaga os dados do Item (``name.of.proprities``) com o valor informado
-- ``git remote add origin url_of_repository_github``: Linka o Local Repository com o Repositorio do GitHub (Server/Repositorio Online)
+- ``git remote add origin url_of_repository_github``: Linka o Local Repository com o Repositorio do GitHub (Server/Repositorio Online), dando o nome de ``origin``
 - ``git push origin your_branch``: Envia os Commits do Repositorio Local para o Repositorio Online
 - ``git clone url_project`` ou ``git@github.com:userOfRepository/nameRepository.git`` (Via SSH): Realiza um clone/copia do Repositorio do GitHub (Online)
-- ```git remote -v``: Mostra as Referencias do Repositorio
+- ```git remote -v``: Mostra os Links do Repositorio Local com o Repositorio Online (GitLab, GitHub)
 
 ### Conflitos de Arquivos
 
