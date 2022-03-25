@@ -96,8 +96,10 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
     - Staging Area: Onde estão os arquivos modificados e prontos (atraves do ``git add files.txt``) para virarem um commit
     - Local Repository: Local em que os commits após serem finalizados são armazenados
 - ``git config --list``: Lista as Configurações do Git da Maquina
+- ``git config --global --list``: Lista as Propriedades Definidas no Sistema
 - ``git config --global name.of.proprities "value"``: Define o Item (``name.of.proprities``) com o valor informado
-- ``git config --global --unset propriete``: Apaga os dados do Item (``name.of.proprities``) com o valor informado
+- ``git config --global --unset [propriete]``: Apaga os dados do Item (``propriete``)
+- ``git config --global core.editor "code --wait"``: Define o Editor Padrão como o Visual Code e Coloca a Flag ``wait`` para ele aguaradar a edição ser concluida
 - ``git remote add origin url_of_repository_github``: Linka o Local Repository com o Repositorio do GitHub (Server/Repositorio Online), dando o nome de ``origin``
 - ``git push origin your_branch``: Envia os Commits do Repositorio Local para o Repositorio Online
 - ``git clone url_project`` ou ``git@github.com:userOfRepository/nameRepository.git`` (Via SSH): Realiza um clone/copia do Repositorio do GitHub (Online)
