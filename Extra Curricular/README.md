@@ -3,10 +3,10 @@
 ### Cursos Concluidos
 
 - Desenvolvimento Pessoal
-  - [Bem Estar Digital - Google Ateliê Digital](G.A%20-%20Bem%20Estar%20Digital.md)
-  - [Metodologias Ágeis, Kanban, Scrum](Metodologias%20Ageis)
+  - [X] [Bem Estar Digital - Google Ateliê Digital](G.A%20-%20Bem%20Estar%20Digital.md)
+  - [X] [Metodologias Ágeis, Kanban, Scrum](Metodologias%20Ageis)
 - Certificações Tecnicas
-  - [Cursos GIT e GitHub](Git)
+  - [X] [Cursos GIT e GitHub](Git)
 
 ### Cursos Futuros
 

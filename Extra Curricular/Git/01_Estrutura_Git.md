@@ -1,4 +1,4 @@
-# Introduçaõ ao Git
+# Estrturua e Introdução ao Git e GitHub
 
 ## Conteudo
 
@@ -101,19 +101,19 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
 - ``git remote add origin url_of_repository_github``: Linka o Local Repository com o Repositorio do GitHub (Server/Repositorio Online), dando o nome de ``origin``
 - ``git push origin your_branch``: Envia os Commits do Repositorio Local para o Repositorio Online
 - ``git clone url_project`` ou ``git@github.com:userOfRepository/nameRepository.git`` (Via SSH): Realiza um clone/copia do Repositorio do GitHub (Online)
-- ```git remote -v``: Mostra os Links do Repositorio Local com o Repositorio Online (GitLab, GitHub)
+- ``git remote -v``: Mostra os Links do Repositorio Local com o Repositorio Online (GitLab, GitHub)
 
 ### Conflitos de Arquivos
 
 - Como Ocorrem ?
   - Ocorre quando duas pessoas estão alterando um mesmo arquivo, e as alterações coincidem no mesmo lugar e uma delas já disponibilizou seu arquivo no GitHub
-  - Quando a segunda pessoa tenta executar um ``push`` nesse arquivo que coincidiu as alteraç~es, o GitHub irá rejeitar o arquivo e solicitar que faça um ```pull`` para sincronizar as alterações
+  - Quando a segunda pessoa tenta executar um ``push`` nesse arquivo que coincidiu as alteraç~es, o GitHub irá rejeitar o arquivo e solicitar que faça um ``pull`` para sincronizar as alterações
 - Como Resolver ?
   - ``git pull origin your_branch``: Obtem as Mudanças do GitHub (Repositorio Online)
   - Caso o Auto-Merge não seja Bem-Sucedido, abrir o arquivo que possui o Conflito e Mudar manualmente o conteudo que será mantido
     - ``git add file_mergerd.txt``
     - ``git commit -m "Mensagem Explicando Resolução do Arquivo"``
-    - ```git push origin your_branch``
+    - ``git push origin your_branch``
 
 - Merge: GitHub realiza esse procedimento quando possuem alterações que coincidem no mesmo local
   - Nesse Processo, realiza uma sincronização das alterações que não coincidem, porem, é necessario que escolha de forma manual quais das alaterações que coincidiram serão mantidas

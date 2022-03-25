@@ -1,4 +1,4 @@
-# Trabalhando com Branchs, Historico e Reversão de Commits
+# Trabalhando com Branchs
 
 ### Branches
 
@@ -18,7 +18,7 @@
 
 - É uma Tag que sempre aponta para o utlimo commit de uma Branch
 - Caso crie e altere para uma nova branch, a Tag ``HEAD`` acompanhara os ultimos commit dessa nova branch. Entretanto, caso volte à branch antiga, a Tag ``HEAD`` volta para o utlimo commit dessa branch antiga e deixa de estar na nova branch
-  - Caso realize um **Merge** entre as Branches, ela pegará o commit com a Tag ``HEAD`` da Branch atual e unirá com o commit com a Tag ```HEAD`` da Branch que está sendo realizado o merge
+  - Caso realize um **Merge** entre as Branches, ela pegará o commit com a Tag ``HEAD`` da Branch atual e unirá com o commit com a Tag ``HEAD`` da Branch que está sendo realizado o merge
 
 ### Comando Checkout
 
@@ -36,7 +36,7 @@
 
 ### Comandos Branch
 
-- ```git branch``: lista as Branches do Repositorio Local
+- ``git branch``: lista as Branches do Repositorio Local
   - A Branch atual será localizada por um (*)
 - ``git branch -m new-name-actual-branch``: Altera o nome da Branch atual
 - ``git branch -m old-name-branch new-name-branch``: Altera o nome de uma branch especifica
