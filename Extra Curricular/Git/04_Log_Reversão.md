@@ -41,3 +41,8 @@
 - ``git revert HEAD~1``: Cria um Novo Commit dizendo que o Ultimo Commit (``HEAD``) será revertido e realiza a operação de reverção
   - É possivel alterar o Nome do Commit e Descrição
 - Utilizar quando se deseja manter o historico feito nos Commits Desfeitos
+
+
+[<--- Pagina Anterior **(03 - Trabalhando com Branchs)**](03_Branches.md)
+
+[Proxima Pagina **(05 - Estruturando Bons Commits)** --->](05_Estruturar_Commits.md)

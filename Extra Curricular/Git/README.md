@@ -9,4 +9,6 @@
 - [05 - Estruturando Bons Commits](05_Estruturar_Commits.md)
 - [06 - Contribuições em Repositorios](06_Contribuicoes.md)
 
-[Proxima Pagina *(01 - Introdução ao Git e GitHub)* --->](01_Introducao_GIT.md)
+[<--- Pagina Anterior **(Materias Extra Curriculares)**](../README.md)
+
+[Proxima Pagina **(01 - Introdução ao Git e GitHub)** --->](01_Estrutura_git.md)

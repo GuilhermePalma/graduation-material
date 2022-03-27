@@ -26,7 +26,7 @@
     - Adicionar Detalhes da Implementação/Atualizações daquele commit
     - Quebrar Linhas em 75 Caracteres
     - Explicar Tudo do Commit
-      - Pensar que a pessoa que está lendo não sabe o que está no codigo ou o que foi feito nele 
+      - Pensar que a pessoa que está lendo não sabe o que está no codigo ou o que foi feito nele
     - Utilizar Markdown
   - Rodapé: Referenciar Assuntos/Issues/Commits Relacionados
 
@@ -61,15 +61,15 @@
 
 Seguir o Passo a Passo: [Conventional Commits](https://www.conventionalcommits.org/pt-br/)
 
-- O Commit seria estruturado da seguinte forma: 
+- O Commit seria estruturado da seguinte forma:
 ```bash
 ## No Editor Padrão, formatar o Commit:
-[Tipo]: [Mensagem de Titulo do Commit] 
+[Tipo]: [Mensagem de Titulo do Commit]
 
 [Corpo/Descrição do Commit (Opcional)]
 
 [Footer (Opcional)]
-``` 
+```
 
 - É uma convenção simples de como utilizar mensagens de Commits
 - Possui um conjunto de regras para criar um historico explicito de commmit
@@ -81,3 +81,7 @@ Seguir o Passo a Passo: [Conventional Commits](https://www.conventionalcommits.o
   - ``fix`` ou ``feat`` + ``!``: Significa que houve uma quebra na Compatibilidade na Base de Codigo. Com isso, o ``MAJOR`` será acrescido
   - > Além do ``fix`` e ``feat``, existe outros **Tipos** de Commits. Por Exemplo: "build", "chore", "ci", "docs", "style", "refactor", "perf", "test", etc
 
+
+[<--- Pagina Anterior **(04 - Historico (Log) e Reversão de Commits)**](04_Log_Reversão.md)
+
+[Proxima Pagina **(06 - Contribuições em Repositorios)** --->](06_Contribuicoes.md)

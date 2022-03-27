@@ -52,3 +52,8 @@
   - Copiar o Token (só é possivel visualizar o Token 1 vez)
 
 - Ao Realizar alguma operação que demande a Autenticação (Ex: Clone de Repositorio), Informar no Campo Especifico o Token Criado
+
+
+[<--- Pagina Anterior **(01 - Estrturua e Introdução ao Git e GitHub)**](01_Estrutura_git.md)
+
+[Proxima Pagina **(03 - Trabalhando com Branchs)** --->](03_Branches.md)

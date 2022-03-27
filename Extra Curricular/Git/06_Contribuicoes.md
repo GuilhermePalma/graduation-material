@@ -64,3 +64,8 @@
 - ``git config --global --unset alias.novo_nome``: Retira o ``alias`` criado no Git
   - Ex: ``git config --global --unset alias.st status``
     - Após esse comando o ``alias`` ``st`` será removido
+
+
+[<--- Pagina Anterior **(05 - Estruturando Bons Commits)**](05_Estruturar_Commits.md)
+
+[Proxima Pagina **(Repositorio do Curso Git/GitHub)** --->](README.md)

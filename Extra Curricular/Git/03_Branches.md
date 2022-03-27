@@ -54,3 +54,8 @@
 - ``git stash pop [index]``: Por meio do ``index``, permite retornar o conteudo do ``stash`` informado
   - Pode ocorrer conflitos de Arquivos. Caso aconteça, acesse o arquivo que possui o conflito e escolha a alteração manualmente
 - ``git stash clear``: Apaga Todos os ``stash``
+
+
+[<--- Pagina Anterior **(02 - Protocolos de Autenticação e Segurança no Git/GitHub)**](02_Autenticacao_Seguranca.md)
+
+[Proxima Pagina **(04 - Historico (Log) e Reversão de Commits)** --->](04_Log_Reversão.md)

@@ -119,3 +119,9 @@ GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
 
 - Merge: GitHub realiza esse procedimento quando possuem alterações que coincidem no mesmo local
   - Nesse Processo, realiza uma sincronização das alterações que não coincidem, porem, é necessario que escolha de forma manual quais das alaterações que coincidiram serão mantidas
+
+
+
+[<--- Pagina Anterior **(Repositorio do Curso Git/GitHub)**](README.md)
+
+[Proxima Pagina **(02 - Protocolos de Autenticação e Segurança no Git/GitHub)** --->](02_Autenticacao_Seguranca.md)
