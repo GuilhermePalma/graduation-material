@@ -162,6 +162,6 @@ para transportar dados.
 
 ---
 
-[<--- Pagina Anterior *(Pagina Inicial)*](README.MD)
+[<--- Pagina Anterior **(Pagina Inicial)**](README.MD)
 
-[Proxima Pagina *(Capitulo 2 - Redes no Dia a Dia)* --->](02-Redes_no_dia_dia.md)
+[Proxima Pagina **(Capitulo 2 - Redes no Dia a Dia)** --->](02-Redes_no_dia_dia.md)

@@ -189,6 +189,6 @@
 
 ---
 
-[<--- Pagina Anterior *(Capitulo 3.2: Comunicação na Rede e seus Dispositivos)*](03.2_Dispostivos_Comunicacoes.md)
+[<--- Pagina Anterior **(Capitulo 3.2: Comunicação na Rede e seus Dispositivos)**](03.2_Dispostivos_Comunicacoes.md)
 
-[Proxima Pagina *(Capitulo 5: Protocolos e Serviços na Internet)* --->](05_Protocolos_Serviços.md)
+[Proxima Pagina **(Capitulo 5: Protocolos e Serviços na Internet)** --->](05_Protocolos_Serviços.md)

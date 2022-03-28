@@ -10,4 +10,4 @@
 
 ---
 
-[<--- Pagina Anterior *(Disciplina: Sistemas Operacionais e Redes de Computadores)*](../README.md)
+[<--- Pagina Anterior **(Disciplina: Sistemas Operacionais e Redes de Computadores)**](../README.md)

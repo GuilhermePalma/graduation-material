@@ -185,6 +185,6 @@ Por fim, para escolher a Midia de Rede recomendada à cada cenário, é necessar
 
 ---
 
-[<--- Pagina Anterior *(Capitulo 1 - Introdução à Internet e Infraestrutura)*](01-Introducao_Internet.md)
+[<--- Pagina Anterior **(Capitulo 1 - Introdução à Internet e Infraestrutura)**](01-Introducao_Internet.md)
 
-[Proxima Pagina *(Capitulo 3: Introdução à Protocolos, Modelos, Comunicações na Rede e seus Dispositivos)* --->](03_Ethernet.md)
+[Proxima Pagina **(Capitulo 3: Introdução à Protocolos, Modelos, Comunicações na Rede e seus Dispositivos)** --->](03_Ethernet.md)
