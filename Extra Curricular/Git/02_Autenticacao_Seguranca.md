@@ -1,5 +1,28 @@
 # Protocolos de Autenticação e Segurança no Git/GitHub
 
+
+### Conteudo
+
+- [Resumo](#resumo)
+- [Chaves SSH](#chaves-ssh)
+  - [Explicação](#explicação)
+  - [Utilização](#utilização)
+- [Token de Acesso Pessoal](#token-de-acesso-pessoal)
+  - [Explicação](#explicação-1)
+  - [Utilização](#utilização-1)
+
+---
+
+## Resumo
+
+Para relacionar um Repositorio Local com um Repositorio Online (Nesse caso, o GitHub), é necessario que realize a Autenticação. Por meio dela, o Usuario da Dispositivo Local consegue ter acesso e realizar modificações no Repositorio Online atraves sua Dispositivo. Para essa Autenticação no Git, é necessario realizar o Login utilizando o Email e Senha do GitHub, ou tambem utilizar uma Chave SSH ou um Token Pessoal.
+
+A chave SSH utiliza de 2 Chaves, a Publica (para o GitHub) e a Privada (para o Computador Local). Por meio delas permite que estabeleça uma conexão segura entre o Computador Local com o Repositorio Online, não precisando realizar o Login pelo E-mail e Senha. *Passo a Passo pode ser [Encontrado Aqui](#chaves-ssh)*
+
+Outra forma de acesso é por meio do Token de Acesso Pessoal. Ele é um codigo gerado no Proprio GitHub, em que é possivel delimitar quais permissões e acessos ele terá e a sua validade. É inserido na mesma etapa de Autenticação do Email e Senha, so que no campo ``Personal Token`` ou ``Token-ID``.  *Passo a Passo pode ser [Encontrado Aqui](#token-de-acesso-pessoal)*
+
+---
+
 ### Chaves SSH
 
 #### Explicação

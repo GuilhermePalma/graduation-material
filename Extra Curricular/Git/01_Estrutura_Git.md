@@ -2,18 +2,48 @@
 
 ## Conteudo
 
-> Aguardando Conclusão do Curso
+- [Resumo](#resumo)
+- [Introdução ao Terminal](#introdução-ao-terminal)
+- [Objetos Internos/Sistema Distribuido GIT](#objetos-internossistema-distribuido-git)
+- [Estados do Git](#estados-do-git)
+- [Comandos](#comandos)
+- [Conflitos de Arquivos](#conflitos-de-arquivos)
 
 ---
 
-## Resumo
+### Resumo
 
-O GIT é um software de versionamento de codigo, que permite que trabalhos sejam organizados e disponibilizado akterações em versõs.
-Dessa forma, organiza e facilita o trabalho em grupo em um projeto.
+O Git é um software de Versionamento de Codigo, que permite a organização e disponibilização de trabalhos em versões, identificando as alteração ao longo do tempo. Para gerenciar esse versionamento, é possivel utilizar Softwares CLI (Git Bash), em que a interação é feita por meio da Linha de Comando (Terminal) ou Softwares GUI (Git Kraken), que possui uma Interface Grafica para interação
 
-GitHub permite que o codigo versionado do GIT seja amrazenado em nuvem.
+Além disso, ele é um software de Sistema Distribuido, em que seu codigo possui diversas copias, sendo armazenado de forma local em um unico ou varios computadores, e tambem em um Repositorio Online, como no GitHub ou GitLab.
 
-> Aguardando Conclusão do Curso
+> Termo **"Repositorio"**: Se Trata de uma Pasta que contem o Sistema de Versionamento do Git. Esse sistema é iniciado após executar o ``git init`` no diretorio informado, criando um ``Repositorio Local``
+
+Para que ocorra toda essa organização dos arquivos, é utilizado de um conjunto de Criptografia Hash, chamada SHA1. No Git, esse conjunto de Criptografia é dividido em 3 Objetos:
+- Bloob: Representa o Conteudo de um Arquivo em um ``String`` de 40 Caracteres
+  - Essa ``String`` muda conforme o conteudo do Arquivo
+- Tree: Responsavel pela organização de Diretorios. Ela pode apontar tanto para um conjunto de arquivos (varios bloobs) daquele diretorio, como tambem para outros diretorios (Trees)
+- Commit: Organiza toda a informação do Repositorio naquele momento/cenário. Ele encapsula as Trees, que por sua vez contem os Bloobs e/ou outras Trees. É representado por um SHA1 Unico, contendo o Nome do Autor, Horario em que foi Criado e uma Mensagem identificando seu Conteudo.
+
+Por meio desses 3 Objetos, o Git consegue perceber todas as alterações nos arquivos do Repositorio, sejam elas a criação de uma função ou apenas a alteração de uma virgula. Dessa forma, a cada alteração, é possivel organizar o conteudo por meio dos Commits.
+
+Com isso, o Git tambem divide os arquivos (bloobs) em "areas". Com o tempo, conforme é executado comados ou alterações nos arquivos, eles se movimentam nas seguintes areas:
+- Untracked: Representa que o arquivo não está sendo "Observado" pelo Git (Provavelmente, não existia no Commit anterior ou o arquivo foi excluido)
+- Unmodified: O arquivo é observado pelo Git, mas não houve alterações desde o ultimo Commit
+- Modified: O arquivo sofreu alterações, logo, seu SHA1 tambem foi alterado
+- Staged: Representa a área em que os arquivos ficam "preparados" para virar um Commit (Ficam nessa area após um ``git add something.ext``)
+
+Como os Repositorios são Disponibilizado tambem de forma Online, é possivel uma pessoa tenha alterado e disponibilizado de forma online, uma mudança na mesma linha em um mesmo arquivo que estava sendo alterado localmente. Para resolver esse conflito, é necessario primeiro fazer um ``git pull`` e verificar se o ``auto-merge`` funcionou. Caso não tenha funcionado, será necessario abrir os arquivos que contem os conflitos e escolher qual alteração será mantida e finalizar fazendo um ``commit`` com a alteração final.
+
+Por fim, alguns comandos importantes no Git são:
+- ``git config``: Responsavel por Exibir e Gerenciar as Configurações do Git
+- ``git init``: Inicializa um Repositorio Git no Diretorio
+- ``git add``: Adiciona os Arquivos na ``Staging Area/Index`` que depois viram Commits
+- ``git commit``: Cria um Commit (Encapsulado de SHA1 com os dados daquele Repositorio)
+- ``git remote``: Define as configurações com o Repositorio Online (GitHub, GitLab)
+- ``git push``: Envia os Commits para o Repositorio Online
+- ``git pull``: Baixa as atualizações do Repositorio Online
+- ``git clone``: Baixa/Clona todos os Commits do Repositorio Online, criando a estrutura e trazendo os arquivos existentes
 
 ---
 
