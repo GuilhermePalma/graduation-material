@@ -24,7 +24,7 @@
 - Permite a conexão com a Rede Internet em diversos dispositivos
 - Roteadores sem Fio:
   - Possuem 2 Tipos de Portas:
-    - Porta Internet: Porta utilizada para conectar o dispositivo a outra Rede. Normalmente é conectada em um modem DSL ou ao cabo utilizado para conectar-se à Internet 
+    - Porta Internet: Porta utilizada para conectar o dispositivo a outra Rede. Normalmente é conectada em um modem DSL ou ao cabo utilizado para conectar-se à Internet
     - Portas Ethernet/LAN: Permite que os dispotivos conectados atuem em uma mesma rede
   - As Antenas no Roteador permite com que os dispositivos conectados à rede pelas portas ou pela conexão sem fio atuem em uma mesma rede.
 
@@ -40,6 +40,24 @@
   - Para evitar esse impacto no desempenho, é utilizado de diferentes canais para comnunicações sem fio, dessa forma podendo ter dispositivos de transmissões pertos, mas sem afetar a Transmissão um do Outro
   - Na rede 5GHz é possivel combinar canais para criar um unico canal de banda larga com uma alta taxa de transferencia de dados
 
+### Protocolos e Padrão das Conexões sem Fio
+
+- O Padrão utilizado nas conexão Sem Fio é determinado pela IEE 802.11, que diz as caracteristicas dos protocolos
+das comunicações.
+- Configurações do Padrão IEE 802.11
+  - Modo de Rede: No padrão existe diferntes modos de rede em que os dispositivos podem se conectar. Deifnir um Modo de Rede especifica, determina que dispositivos com outro modo de rede não cnseguiram acessar. Por isso, manter o Modo de Rede no ``Automatico``/``Modo Misto`` faz com que diferentes dispositivos se conectem
+  - Nome da Rede (SSID): Identifica a rede para que os Dispositivos se conectem e se comuniquem
+  - Canal Padrão: Determina em qual Frequencia a Rede irá funcionar
+  - Boradcast de SIID: Determina se o SSID será transmitido para os Dispositivos
+
+- SSID: Uma String (Text) de até 32 Caracteres, enviada nos Cabeçalhos dos Quadros Transmitidos pela WLAN. Ela permite com que as Estações Sem Fio (STA) identifque qual WLAN eles pertencem e com quais dispositivos podem se comunicar.
+  - A Transmissão do SSID permite com que os dispositivos se conectem automaticamente à rede sem fio. Por Padrão, os roteadores fazem transmissões dos seus SSIDs automaticamente
+  - É necessario saber o SSID para se conectar à rede
+
+> WLAN: Wirelles Local Area Network (Rede Local Wirelles)
+
+- A Wi-Fi Alliance, é uma organização que realiza teste nos diferentes dispositivos que permitem a conexão sem fio. Caso o dispositivo seja aprovado, recebe o simbolo "Wi-Fi"
+
 ### Gerenciamento de Transmissões
 
 - Quandos se trata de uma rede Ethernet, a colisão ocorre quando dois ou mais dispositivos tentam enviar uma mensagem a mesmo tempo
@@ -47,29 +65,34 @@
   - RTS (Request to Send): Inicialmente, um dispositivo solicita um canal para o Acess Point .
   - Caso o canal esteja dispnivel, o Acess Point responde ao dispositivo com uma CTS (Clear to Send)
     - O CTS é transmitido à todos os dispositivos da rede para saberem que o canal está em uso
+  - ACK (Acknowledgement): O cliente informa que a transmissão foi finalizada
 - Pulgando um cabo na de Ethernet nas Portas LAN e a outra ponta no computador, alem de uma conexão com a Internet, permite com que acesse as configurações do roteador
   - Normalmente, as configuraçõs do roteador já atribui um endereço de UP automaticamente por meio de um servidor DHCP
-- É possivel cadastras uma lista com os Endereços MAC permitidos que acessem a rede
+
+### Segurança e Autenticação na Rede sem Fio
+
+- Autenticação com Filtro de Endereço MAC:
+  - Ao tentar-se conectar à rede, é enviado o endereço MAC do Dispositivo. Quando a Filtragem pelo Endereço MAC está ativo, o Acess Point só permite que os Endereços MACs Cadastrados se conectem
   - Isso deixa a rede mais seguram mas reduz sua flexibilidade de conexçoes. Porem, as vezes, é possivel cadastrar um acesso para convidados na rede
-- Outra forma de restringir o acesso é criando uma autenticação (Senha) ppara conexão ao SSID
-
-### Protocolos e Padrão das Conexões sem Fio
-
-- O Padrão utilizado nas conexão Sem Fio é determinado pela IEE 802.11, que diz as caracteristicas dos protocolos 
-das comunicações. 
-- Configurações do Padrão IEE 802.11
-  - Modo de Rede: No padrão existe diferntes modos de rede em que os dispositivos podem se conectar. Deifnir um Modo de Rede especifica, determina que dispositivos com outro modo de rede não cnseguiram acessar. Por isso, manter o Modo de Rede no ``Automatico`` faz com que diferentes dispositivos se conectem
-  - Nome da Rede (SSID): Identifica a rede para que os Dispositivos se conectem e se comuniquem
-  - Canal Padrão: Determina em qual Frequencia a Rede irá funcionar
-  - Boradcast de SIID: Determina se o SSID será transmitido para os Dispositivos
-
-- SSID: Uma String (Text) de até 32 Caracteres, enviada nos Cabeçalhos dos Quadros Transmitidos pela WLAN. Ela permite com que as Estações Sem Fio (STA) identifque qual WLAN eles pertencem e com quais dispositivos podem se comunicar.
-  - A Transmissão do SSID permite com quie os dispositivos se conectem automaticamente à rede sem fio. Por Padrão, os roteadores fazem transmissões dos seus SSIDs automaticamente
-  - Sem o SSID, dificulta com que os aparelhos conectem-se à rede
-
-  > WLAN: Wirelles Local Area Network (Rede Local Wirelles)
-
-- A Wi-Fi Alliance, é uma organização que realiza teste nos diferentes dispositivos que permitem a conexão sem fio. Caso o dispositivo seja aprovado, recebe o simbolo "Wi-Fi"
+    - O Acesso é apenas restringido ao uso da Internet na Rede de Convidados
+- Autenticação de Rede Aberta:
+  - Por padrão, não é exigido a autenticação para Conexões sem Fio
+  - Utilizado em Redes Publicas
+- Criptografia WEP:
+  - É responsavel por criptografar os dados que transitam pela rede utilizando uma chave pre-definida de criptografia/descriptografia de 64 ou 128 bits
+  - Por ser uma chave estatica, existem Softwares que conseguem obter essa Chave
+- Criptografia WPA2
+  - Tambem é uma chave de Cirptografia de 64 a 128 bits, só que é gerada dinâmicamente quando se estabelece uma nova conexão com o Acess Point
+  - Após o WEP, surgiu o WAP que depois evoluiu para WAP2
+- Criptografia WAP2-PSK:
+  - Segue o mesmo modelo da WAP2, mas é utiliza em Redes Domesticas. Por conta disso, utiliza de uma chave pré-compartilhada na rede, sendo a senha da Rede
+- Quando se tem a Autenticação e a Filtragem de Endereço MAC, primeiro será feito a autenticação
+- Tornando uma rede mais Segura:
+  - Altere o SSID e Senha Padrão
+  - Desativar a Transmissão do SSID
+  - Configurar a filtragem de Conexões via Endereço MAC
+  - Configurar Criptografia WAP2 e Autenticação
+  - Configurar Filtragem de Trafego
 
 ### ISP
 
@@ -87,15 +110,15 @@ das comunicações.
 #### Tipos de Conexões
 
 - Normalmente, é feito a conexão por um cabo de fibra optica, mas são possiveis outras formas
-  - Cabo Coaxial
+  - Cabo Coaxial (Internet a Cabo):
     - Normalmente são utilizados por provedores de TV a cabo. Em que o sinal de Internet é transportado no mesmo cabo que o sinal de TV
     - Possui uma conexão de alta largura de banda
     - Um Modem separa o sinal de Internet e os demais sinais do cabo
-  - DSL (Digital Subscriber Line: 
+  - DSL (Digital Subscriber Line):
     - Executado em uma Linha Telefonica com 3 Canais, um para chamadas telefonicas, um canal de downloasds rapidos e um ultimo para enviar/carregare informações
     - Conexão de alta largura de banda, demandando de um modem de alta velocidade que separa o sinal de telefone e Ethernet
     - A qualidade depende principalmente da qualidade da linha telefonica e da proximidade com a companhia telefonica
-  - Celular: 
+  - Celular:
     - Utilização da Rede celular para se conectar, normalmente é utilizada por pessoas que estarão se movuimentando
     - Desempenho limitado aos recursos do telefone e torre conectada
     - É cobrado taxas em cima da utilização
