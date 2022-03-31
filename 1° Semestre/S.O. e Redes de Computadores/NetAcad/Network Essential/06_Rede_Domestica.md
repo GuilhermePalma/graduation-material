@@ -2,13 +2,22 @@
 
 ## Conteudo
 
-> Capitulo não Finalizado
+- [Resumo](#resumo)
+  - [Conexão sem Fio](#conexão-sem-fio)
+  - [Transmissões na Conexão Sem Fio](#transmissões-na-conexão-sem-fio)
+  - [Protocolos e Padrão das Conexões sem Fio](#protocolos-e-padrão-das-conexões-sem-fio)
+  - [Gerenciamento de Transmissões](#gerenciamento-de-transmissões)
+  - [Segurança e Autenticação na Rede sem Fio](#segurança-e-autenticação-na-rede-sem-fio)
+  - [ISP](#isp)
+    - [Tipos de Conexões](#tipos-de-conexões)
+  - [Dispositivos Moveis](#dispositivos-moveis)
+  - [Conexões Bluetooth](#conexões-bluetooth)
 
 --
 
 ## Resumo
 
-> Criar Resumo para Esse Capitulo
+> Resumo em Criação
 
 ---
 
@@ -129,6 +138,31 @@ das comunicações.
   - Conexão Discada (Dial-up):
     - Opção de Baixo custo que utiliza da Linha Telefonica e do Modem, mas entregando uma conexão de baixa largura de banda, não sendo suficiente para alta taxa de dados
     - O Usuario faz uma ligação ao ISP e se conecta à Internet
+
+### Dispositivos Moveis
+
+- Permitem que as pessoas não fiquem presas Fisicamente em um local
+- O uso do Wi-Fi é mais recomendando por não consomir o plano de dados da operadora e ter um gasto menor de Energia do Dispositivo
+- Em alguns lugares é disponibilizado o acesso à rede Wi-Fi, nessas redes é importante tomar allguns cuidados, como:
+  - Não enviar dados de Login em Textos não Encriptografados
+  - Usar VPN para proteger dados sensiveis
+  - Buscar usar redes com a segurança WPA2
+- Processo de Conexão: Um dispositivo tenta Conectar-se à uma Rede dentro da sua Area, buscando um Acess Point que esteja transmitindo o SSID e permita a conexão. Caso nenhuma esteja disponivel e seus Dados Moveis (Plano de Dados de Internet da Operadora) estejam ativos, a conexão é alternada para Dados Moveis
+  - Na Rede de Dados Moveis, é possivel que ocorra a alternancia entre os tipos de Rede (5G, 4G, 3G, etc). Nesse processo as conexões não são perdidads
+- Um celular sempre tenta conectar-se à redes antigas já conectadas
+  - Isso só não ocorre quando a "Conexão Automatica" está desativada ou a Transmissão SSID esteja desativada
+
+### Conexões Bluetooth
+
+- Por que Bluetooth ? Conexões Wi-Fi exigem configurações e um Acess Point e conexões cabeadas nem sempre são praticas
+- Permite que conecte diferentes dispositivos (até 8) de modo simples, sem muito consumo de energia
+- Alguns Perifericos com Bluetooth:
+  - Fone de ouvido, Teclado e mouse
+  - Controle de Sistema de Som e Auto-Falantes
+  - Compartilhamento de Internet: Um dispositivo consegue compartilhar com outro a sua conexão Wi-Fi
+- Para a conexão Bluetooth os aparelhos precisam iniciar o radio Bluetooth e iniciar a busca dos dispositivos configurados como detectavel/visivel.
+  - Quando o dispositivo está com o Bluetooth detectavel ele enviando dados como: nome, classe de Bluetooth, serviços disponiveis para utilizar e informações tecnicas do Bluetooth
+  - Pode ocorrer de solictar o PIN do dispositivo na conexão. Normalmente, ele é armazenado para proximas conexões
 
 ---
 
