@@ -17,14 +17,42 @@
 
 ## Resumo
 
-> Resumo em Criação
+As Conexões Sem Fio, utilizam de ondas eletromagneticas, dividias em frequencias (4.2GHz e 5GHz), que permite o transporte de Informações. Dessa forma, a rede pode ser expandida e compartilhada com os dispositivos que tenham compatibilidade com transmissões sem fio e desprezando com que o dispositivo esteja conectado à cabos ou atrelado à um espaço fisico.
+
+As conexões via Bluetooth exigem menos configurações e despreza a utilização de cabos, sendo encontradas tanto nos hosts, como em aparelhos perifericos, como fones, mause, caixsas de som. Normalmente utiliza a frequencia 2.4GHz, transmitindo e atuando em uma area e velocidade mais baixa que o Wi-Fi.
+
+Já a rede Wirelles (popularmente chamada de Wi-Fi), utiliza de ambas as frequencias, seguindo o Padrão IEE 80.11, tendo um alcance e potencia maior. Normalmente é utilizado um Roteador que possui 2 tipos de porta, a LAN, para conexões de dispositivos na rede via cabo e a Internet, para a conexão com o Link da Operadora/ISP. Para que ocorra a Transmissão sem fio, é utilizado as Antenas do Roteador para a transmissão do Sinal. 
+
+Das configurações do Roteador, o SSID tem destaque. Ele se trata de um Texto de 32 Caracteres que identifica a Rede sem Fio em que o dispositivo tenta se conectar e tambem é enviado no Cabeçalho das Transmissões de Quadros. Outras configurações são: o modo de rede, que define um modo de conexão especifico; o canal padrao, que determina qual frequencia será utilizada, evitando que ocorra queda no desempenho por causa de outros aparelhos que realizem transmissões sem fio; e por fim, o Broadcast do SSID, que controla se o SSID será transmitido.
+
+Para que os dispositivos se comuniquem com a Internet, é necessario o Link fornecido por um ISP (Provedor de Serviço de Internet). Ele se trata de uma conexão de varias redes que contem Roteadores e Switches para gerenciar e direcionar as transmissões da Origem ao Destino. Para que essa conexão ocorra, é utilizada da rede backbone da Internet, em que é fornecida uma alta velocidade de dados e que conectam varias redes de ISP. Normalmente quando se contrata um ISP, é fornecido junto com o Link da Internet um Roteador Wi-Fi, que possuem um Switch para conexões Locais, um Acess Point para conexões sem Fio e um Servidor DHCP para atribuir os IPs.
+ 
+O Link do ISP pode ser fornecido de diversas formas:
+- Cabo Coaxial: Uma conexão de alta largura de banda, normalmente fornecido por Provedores de TV a cabo, em que o sinal de Internet e da TV são transmisitidos juntos e depois separados por um modem
+- DSL: Tambem é uma conexão de alta largura de banda, que pode ter seu desempenho afetado em relação à distancia da Fornecedora. Possui uma Linha Telefonica com 3 Canais: um para Download de Dados, outro para Chamadas Telefonicas e ultimo para envio e recebimento de Informações. Esses sinais são separados por um modem para a utilização.
+- Celular: Utilizado a partir de transmissões da Rede Celular, tendo um desempenho limitido aos recursos da Torre Conectada
+- Satelite: Quando não se tem uma conexão de DSL, é uma boa opção. Realiza a conexão com a Internet por meio de Satalites, dessa forma sendo necessario ter uma visão limpa para o satelite e tendo um custo maior
+- Conexão Discada (Dial-up): Um modelo de conexão antigo, que fornece uma baixa largura de banda. Nele é utilizada a Linha Telefonica para iniciar a conexão e um modem para acessa-la
+
+Uma rede Wi-Fi pode ser deixada sem um protocolo de autenticação na sua conexão. Entretanto, em redes domesticas ou em empresas, busca-se restringir o acesso de dispositivos externos usando protocolos de Autenticação e Criptografia:
+- Autenticação permitindo que apenas os Endereço MACs cadastrados se conectem à rede
+- Criptografia WEP que utilizava de uma chave pre-definida de 64 a 128 bits para a criptografia das Informações Transmitidas. Entretanto, não se é mais recomendada pois utiliza de uma chave estatica, que em certos softwares e possivel obter a chave no Trefego da Rede 
+- Criptografia WPA2 que segue a mesma ideia de chave de Criptografia WEP, diferenciando apenas na utiliza de uma chave dinamica a cada vez que estabelce uma conexão com o Acess Point. Uma ramificação dessa criptografia é a WAP2-PSK, mais presente em redes domesticas em que sua chave é pre-compartilhada por toda a rede, normalmente sendo a mesma senha de conexão da rede.
+
+A Autenticação e Filtragem pelo Endereço MAC podem ser utilizados em conjunto. Quando isso ocorrer, a autenticação será realizada primeiro. Outras medidas de segurança são: alterar o SSID padrão do Roteador, Desativar a Transmissão do SSID (entretanto, será necessario digitar manualmente o SSID para a conexão da Rede) e configurar a Filtragem de Trafego. Sempre que possivel, colocar uma autenticação e utilizar da Cirptografia WAP2
+
+Assim como nas Redes Ethernet, é necessario protocolos para evitar a perda de informações na rede causadas pelas colisões. Para isso, na Rede WLAN (Wirelles Local Area Network) é utilizado o CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance), em que é criado canais de comunicações exclusivos para que aquela comunicação ocorra. Dessa forma, inicialmente um Dispositivo Solicita ao Acess Point um Canal de comunicação com o Destino (RTS - Request to Send), caso o Destino esteja disponivel, o Acess Point retorna à Origem um CTS (Clear to send) e avisa os demais dispositivos na rede que ambos estão se conectando. Após a transmissão da Mensagem terminar, os dispositivos notificam o Acess Point com um ACK (Acknowledgement).
+
+Assim como nas Redes Wireless, os dispositivos moveis, conforme o Plano Contratado da Operadaora, conseguem se conectar à antena mais proxima e ter acesso à Rede de Dados Moveis. Conforme os recursos da Antena, é possivel que o dispositivo altere entre os tipos de Rede (5G, 4G, 3G, etc) sem a perda de dados. Entretanto, essa conexão tem como desvantagem a baixa velocidade da conexão.
+
+Por fim, quando aparelhos se conectam no mesmo SSID ou nas portas LAN/Ethernet do Roteador, eles podem se comunicar entre si e tambem, ao retornar à area de Cobertura Wi-Fi, normalmente se conectam automaticamente à rede. 
 
 ---
 
 ### Conexão sem Fio
 
 - Mobilidade: Conexão mais facil para os dipositivos
-- Escalabilidade: É ossivel expandir e contemplar um maior numero de usuarios e/ou are ade cobertura
+- Escalabilidade: É possivel expandir e contemplar um maior numero de usuarios e/ou area de cobertura
 - Flexibilidade: Conexão a qualquer hora em qualquer lugar
 - Economia: O custo dos dispositivos caem junto do ao amadurecimentod a tecnologia
 - Tempo de Intalação Reduzido: Um unico aparelho que fornece conectividade à varias pessoas
@@ -43,7 +71,7 @@
   - As ondas eletromagneticas são divididas em Frequencias. Algumas são licenciadas pelo Governo e só ppodem ser utilizadas com a permissã. Já outras, não é necessario, e normalmente são usadas em produtos de consumo, como o roteador de Wi-Fi
 - As ondas 2,4GHz e 5 GHz são utilizadasna Transmissão sem fio, podendo ser:
   - Conexões Bluetooth: Utiliza a Frequencia 2,4GHz, permite com que diversos dispositivos se interconectem (mouse, celulares, fones, etc), mas tendo um curto alcance e baixa velocidade
-  - Conexões LAN: Utiliza de ambas as Frequencias, seguem um pardão (IEE 802.11) e possui um nivel de potencia maior, gferando um maior alcance e rendimento
+  - Conexões LAN: Utiliza de ambas as Frequencias, seguem um pardão (IEE 802.11) e possui um nivel de potencia maior, gerando um maior alcance e rendimento
 - Canais sem Fio:
   - Quando se tem mais aparelhos de transmissões Wi-Fi ou eletronicos domesticos (babas eletronicas) em um mesmo intervalo, acaba afetando o desempenho.
   - Para evitar esse impacto no desempenho, é utilizado de diferentes canais para comnunicações sem fio, dessa forma podendo ter dispositivos de transmissões pertos, mas sem afetar a Transmissão um do Outro
@@ -57,7 +85,7 @@ das comunicações.
   - Modo de Rede: No padrão existe diferntes modos de rede em que os dispositivos podem se conectar. Deifnir um Modo de Rede especifica, determina que dispositivos com outro modo de rede não cnseguiram acessar. Por isso, manter o Modo de Rede no ``Automatico``/``Modo Misto`` faz com que diferentes dispositivos se conectem
   - Nome da Rede (SSID): Identifica a rede para que os Dispositivos se conectem e se comuniquem
   - Canal Padrão: Determina em qual Frequencia a Rede irá funcionar
-  - Boradcast de SIID: Determina se o SSID será transmitido para os Dispositivos
+  - Broadcast de SIID: Determina se o SSID será transmitido para os Dispositivos
 
 - SSID: Uma String (Text) de até 32 Caracteres, enviada nos Cabeçalhos dos Quadros Transmitidos pela WLAN. Ela permite com que as Estações Sem Fio (STA) identifque qual WLAN eles pertencem e com quais dispositivos podem se comunicar.
   - A Transmissão do SSID permite com que os dispositivos se conectem automaticamente à rede sem fio. Por Padrão, os roteadores fazem transmissões dos seus SSIDs automaticamente
@@ -70,7 +98,7 @@ das comunicações.
 ### Gerenciamento de Transmissões
 
 - Quandos se trata de uma rede Ethernet, a colisão ocorre quando dois ou mais dispositivos tentam enviar uma mensagem a mesmo tempo
-- Redes WLAN, por nã possuirem limites definidos não é detectado essas colisões, por isso, é utilizada da CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance), em que se cria um canla para os dois dispositivos se comunicarem sem que outros interfiram
+- Redes WLAN, por nã possuirem limites definidos não é detectado essas colisões, por isso, é utilizada da CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance), em que se cria um canal para os dois dispositivos se comunicarem sem que outros interfiram
   - RTS (Request to Send): Inicialmente, um dispositivo solicita um canal para o Acess Point .
   - Caso o canal esteja dispnivel, o Acess Point responde ao dispositivo com uma CTS (Clear to Send)
     - O CTS é transmitido à todos os dispositivos da rede para saberem que o canal está em uso
@@ -105,7 +133,7 @@ das comunicações.
 
 ### ISP
 
-- SIP (Internet Service Provider): Fornecer um link entre a rede domestica e a Internet Global
+- ISP (Internet Service Provider): Fornecer um link entre a rede domestica e a Internet Global
   - Os SIP se organizam em uma teia de conexões de fibra optica que possui roteadores e switches que gerenciam/direcionam p fluxo entre o origem/destino
   - Uma conexão direta entre um Computador - Modem - ISP não forence segurança
   - É recomendado utilizar um roteador para conectar um computador e o ISP com segurança
@@ -139,7 +167,7 @@ das comunicações.
     - Opção de Baixo custo que utiliza da Linha Telefonica e do Modem, mas entregando uma conexão de baixa largura de banda, não sendo suficiente para alta taxa de dados
     - O Usuario faz uma ligação ao ISP e se conecta à Internet
 
-### Dispositivos Moveis
+### Dispositivos Moveis 
 
 - Permitem que as pessoas não fiquem presas Fisicamente em um local
 - O uso do Wi-Fi é mais recomendando por não consomir o plano de dados da operadora e ter um gasto menor de Energia do Dispositivo
