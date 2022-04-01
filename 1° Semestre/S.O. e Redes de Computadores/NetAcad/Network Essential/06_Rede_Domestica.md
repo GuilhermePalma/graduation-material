@@ -21,12 +21,12 @@ As Conexões Sem Fio, utilizam de ondas eletromagneticas, dividias em frequencia
 
 As conexões via Bluetooth exigem menos configurações e despreza a utilização de cabos, sendo encontradas tanto nos hosts, como em aparelhos perifericos, como fones, mause, caixsas de som. Normalmente utiliza a frequencia 2.4GHz, transmitindo e atuando em uma area e velocidade mais baixa que o Wi-Fi.
 
-Já a rede Wirelles (popularmente chamada de Wi-Fi), utiliza de ambas as frequencias, seguindo o Padrão IEE 80.11, tendo um alcance e potencia maior. Normalmente é utilizado um Roteador que possui 2 tipos de porta, a LAN, para conexões de dispositivos na rede via cabo e a Internet, para a conexão com o Link da Operadora/ISP. Para que ocorra a Transmissão sem fio, é utilizado as Antenas do Roteador para a transmissão do Sinal. 
+Já a rede Wirelles (popularmente chamada de Wi-Fi), utiliza de ambas as frequencias, seguindo o Padrão IEE 80.11, tendo um alcance e potencia maior. Normalmente é utilizado um Roteador que possui 2 tipos de porta, a LAN, para conexões de dispositivos na rede via cabo e a Internet, para a conexão com o Link da Operadora/ISP. Para que ocorra a Transmissão sem fio, é utilizado as Antenas do Roteador para a transmissão do Sinal.
 
 Das configurações do Roteador, o SSID tem destaque. Ele se trata de um Texto de 32 Caracteres que identifica a Rede sem Fio em que o dispositivo tenta se conectar e tambem é enviado no Cabeçalho das Transmissões de Quadros. Outras configurações são: o modo de rede, que define um modo de conexão especifico; o canal padrao, que determina qual frequencia será utilizada, evitando que ocorra queda no desempenho por causa de outros aparelhos que realizem transmissões sem fio; e por fim, o Broadcast do SSID, que controla se o SSID será transmitido.
 
 Para que os dispositivos se comuniquem com a Internet, é necessario o Link fornecido por um ISP (Provedor de Serviço de Internet). Ele se trata de uma conexão de varias redes que contem Roteadores e Switches para gerenciar e direcionar as transmissões da Origem ao Destino. Para que essa conexão ocorra, é utilizada da rede backbone da Internet, em que é fornecida uma alta velocidade de dados e que conectam varias redes de ISP. Normalmente quando se contrata um ISP, é fornecido junto com o Link da Internet um Roteador Wi-Fi, que possuem um Switch para conexões Locais, um Acess Point para conexões sem Fio e um Servidor DHCP para atribuir os IPs.
- 
+
 O Link do ISP pode ser fornecido de diversas formas:
 - Cabo Coaxial: Uma conexão de alta largura de banda, normalmente fornecido por Provedores de TV a cabo, em que o sinal de Internet e da TV são transmisitidos juntos e depois separados por um modem
 - DSL: Tambem é uma conexão de alta largura de banda, que pode ter seu desempenho afetado em relação à distancia da Fornecedora. Possui uma Linha Telefonica com 3 Canais: um para Download de Dados, outro para Chamadas Telefonicas e ultimo para envio e recebimento de Informações. Esses sinais são separados por um modem para a utilização.
@@ -36,7 +36,7 @@ O Link do ISP pode ser fornecido de diversas formas:
 
 Uma rede Wi-Fi pode ser deixada sem um protocolo de autenticação na sua conexão. Entretanto, em redes domesticas ou em empresas, busca-se restringir o acesso de dispositivos externos usando protocolos de Autenticação e Criptografia:
 - Autenticação permitindo que apenas os Endereço MACs cadastrados se conectem à rede
-- Criptografia WEP que utilizava de uma chave pre-definida de 64 a 128 bits para a criptografia das Informações Transmitidas. Entretanto, não se é mais recomendada pois utiliza de uma chave estatica, que em certos softwares e possivel obter a chave no Trefego da Rede 
+- Criptografia WEP que utilizava de uma chave pre-definida de 64 a 128 bits para a criptografia das Informações Transmitidas. Entretanto, não se é mais recomendada pois utiliza de uma chave estatica, que em certos softwares e possivel obter a chave no Trefego da Rede
 - Criptografia WPA2 que segue a mesma ideia de chave de Criptografia WEP, diferenciando apenas na utiliza de uma chave dinamica a cada vez que estabelce uma conexão com o Acess Point. Uma ramificação dessa criptografia é a WAP2-PSK, mais presente em redes domesticas em que sua chave é pre-compartilhada por toda a rede, normalmente sendo a mesma senha de conexão da rede.
 
 A Autenticação e Filtragem pelo Endereço MAC podem ser utilizados em conjunto. Quando isso ocorrer, a autenticação será realizada primeiro. Outras medidas de segurança são: alterar o SSID padrão do Roteador, Desativar a Transmissão do SSID (entretanto, será necessario digitar manualmente o SSID para a conexão da Rede) e configurar a Filtragem de Trafego. Sempre que possivel, colocar uma autenticação e utilizar da Cirptografia WAP2
@@ -45,7 +45,7 @@ Assim como nas Redes Ethernet, é necessario protocolos para evitar a perda de i
 
 Assim como nas Redes Wireless, os dispositivos moveis, conforme o Plano Contratado da Operadaora, conseguem se conectar à antena mais proxima e ter acesso à Rede de Dados Moveis. Conforme os recursos da Antena, é possivel que o dispositivo altere entre os tipos de Rede (5G, 4G, 3G, etc) sem a perda de dados. Entretanto, essa conexão tem como desvantagem a baixa velocidade da conexão.
 
-Por fim, quando aparelhos se conectam no mesmo SSID ou nas portas LAN/Ethernet do Roteador, eles podem se comunicar entre si e tambem, ao retornar à area de Cobertura Wi-Fi, normalmente se conectam automaticamente à rede. 
+Por fim, quando aparelhos se conectam no mesmo SSID ou nas portas LAN/Ethernet do Roteador, eles podem se comunicar entre si e tambem, ao retornar à area de Cobertura Wi-Fi, normalmente se conectam automaticamente à rede.
 
 ---
 
@@ -167,7 +167,7 @@ das comunicações.
     - Opção de Baixo custo que utiliza da Linha Telefonica e do Modem, mas entregando uma conexão de baixa largura de banda, não sendo suficiente para alta taxa de dados
     - O Usuario faz uma ligação ao ISP e se conecta à Internet
 
-### Dispositivos Moveis 
+### Dispositivos Moveis
 
 - Permitem que as pessoas não fiquem presas Fisicamente em um local
 - O uso do Wi-Fi é mais recomendando por não consomir o plano de dados da operadora e ter um gasto menor de Energia do Dispositivo
@@ -196,4 +196,4 @@ das comunicações.
 
 [<--- Pagina Anterior **(Capitulo 5: Protocolos e Serviços na Internet)**](05_Protocolos_Serviços.md)
 
-[**Home**](README.MD)
+[Proxima Pagina **(Capitulo 7: Segurança e Vulnerabilidades nas Redes)** --->](07_Seguranca_Rede.md)
