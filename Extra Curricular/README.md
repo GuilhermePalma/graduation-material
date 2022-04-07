@@ -6,7 +6,7 @@
   - [X] [Bem Estar Digital - Google Ateliê Digital](G.A%20-%20Bem%20Estar%20Digital.md)
   - [X] [Metodologias Ágeis, Kanban, Scrum](Metodologias%20Ageis)
 - Certificações Tecnicas
-  - [X] [Cursos GIT e GitHub](Git)
+  - [X] [Cursos GIT e GitHub](Book-Git_GitHub.md)
 
 ### Cursos Futuros
 
