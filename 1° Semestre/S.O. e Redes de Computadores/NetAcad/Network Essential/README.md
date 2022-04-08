@@ -10,6 +10,8 @@
 - [Capitulo 4 - IPs e Transmissão na Rede](04_IPs_Transmissoes.md)
 - [Capitulo 5: Protocolos e Serviços na Internet](05_Protocolos_Serviços.md)
 - [Capitulo 6: Rede Domestica](06_Rede_Domestica.md)
+- [Capitulo 7: Segurança e Vulnerabilidades nas Redes](07_Seguranca_Rede.md)
+- [Capitulo 8: Configurações de Dispositivos CISCO](08_Configuracao_Dispositivos.md)
 
 ---
 
