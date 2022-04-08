@@ -198,4 +198,4 @@ Impedem a exibição de pop-upse pop-unders. Normalmente já vem de padrão com 
 
 [<--- Pagina Anterior **(Capitulo 6: Rede Domestica)**](06_Rede_Domestica.md)
 
-[**Home**](README.MD)
+[Proxima Pagina **(Capitulo 8: Configurações de Dispositivos CISCO)** --->](08_Configuracao_Dispositivos.md)
