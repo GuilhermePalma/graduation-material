@@ -181,4 +181,4 @@
 
 [<--- Pagina Anterior **(Capitulo 7: Segurança e Vulnerabilidades nas Redes)**](07_Seguranca_Rede.md)
 
-[Proxima Pagina **(Capitulo 9: Testes e Soucionamento de Problemas)** --->](09_.md)
+[Proxima Pagina **(Capitulo 9: Testes e Soucionamento de Problemas)** --->](09_Resolucao_Problemas.md)

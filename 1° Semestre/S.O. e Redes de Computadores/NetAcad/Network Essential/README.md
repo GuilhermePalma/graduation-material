@@ -12,7 +12,7 @@
 - [Capitulo 6: Rede Domestica](06_Rede_Domestica.md)
 - [Capitulo 7: Segurança e Vulnerabilidades nas Redes](07_Seguranca_Rede.md)
 - [Capitulo 8: Configurações de Dispositivos CISCO](08_Configuracao_Dispositivos.md)
-
+- [Capitulo 9: Testes e Soucionamento de Problemas](09_Resolucao_Problemas.md)
 ---
 
 [<--- Pagina Anterior **(Certificações Cisco - NET Academy)**](../README.md)
