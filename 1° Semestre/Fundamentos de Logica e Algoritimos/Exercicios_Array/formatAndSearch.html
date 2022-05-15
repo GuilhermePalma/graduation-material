@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array - Formatação e Pesquisas</title>
+</head>
+<body>
+    <script>
+        /* Escreva um algoritmo para guardar em um vetor o valor de 15 números
+        aleatórios. Depois escrever os números separados por ";" */
+
+        var randomArray = getRandonArray();
+        window.alert(spliceRandonArray(randomArray));
+        window.alert(getEqualsNumbers(randomArray));
+
+        function getRandonArray(){
+            var array = [];
+
+            for (var i = 0; i < 15; i++) {
+                array[i] = Math.floor(Math.random() * 11);
+            }
+
+            return array
+        }
+
+        function spliceRandonArray(array){
+            return array.join('; ');
+        }
+
+        function getEqualsNumbers(array){
+            // Obtem os Numeros Repitidos e Configura em um Set (Resultados Unicos)
+            var equalsNumbers = array.filter((element, index) => array.indexOf(element) !== index);
+            var r = [...new Set(equalsNumbers)];
+
+            var stringBuilder = "";
+
+            // Realiza operações para cada Numero Repetido
+            for(var i = 0; i < r.length; i++){
+                var number = r[i];
+
+                stringBuilder += number + ": Index[";
+                var positionsOfNumber = [];
+
+                // Obtem as Posições do Numero que se Repete
+                for(var u = 0; u < array.length; u++){
+                    if(number == array[u]) positionsOfNumber.push(u);
+                }
+
+                stringBuilder += positionsOfNumber.join("; ") + "]\n";
+            }
+
+            return stringBuilder;
+        }
+
+    </script>
+</body>
+</html>

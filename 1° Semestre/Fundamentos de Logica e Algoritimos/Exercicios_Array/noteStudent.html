@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio - Calculo de Medias</title>
+</head>
+<body>
+
+    <script>
+        /*
+          Utilizando vetores, escreva um algoritmo que permita a leitura das
+          notas de uma turma de 20 alunos. Calcular a média da turma e contar
+          quantos alunos obtiveram nota acima desta média calculada. Escrever
+          a média da turma e o resultado da contagem.
+        */
+        var note = [];
+        const quantityNote = 20;
+
+        for (var i = 0; i < quantityNote; i++) {
+            note[i] = parseInt(window.prompt("Digite a Nota do Aluno\nNota "
+                + (i+1) + "-" + quantityNote, 0));
+        }
+
+        var media = note.reduce(function(previousValue, currentValue) {
+           return previousValue + currentValue;
+        }, 0) / quantityNote;
+
+        var aboveAverageStudent = note.filter(element => element > media);
+
+        window.alert("Media da Sala: " + media +
+            "\nQuantidade de Alunos acima da Media: " + aboveAverageStudent.length)
+
+    </script>
+
+</body>
+</html>

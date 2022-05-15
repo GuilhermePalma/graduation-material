@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menor Numero no Array</title>
+</head>
+<body>
+
+    <script>
+        /*
+          Escreva um algoritmo que exiba o valor do menor elemento do array V
+          e a respectiva posição que ele ocupa no vetor
+        */
+        var array = [5,1,4,2,7,8,3,6];
+
+        var minNumber = Math.min(...array);
+        var indexNumber = array.indexOf(minNumber);
+
+        window.alert("Maior Elemento do Array: " + minNumber +
+            "\nPosição/Index no Array: " + indexNumber)
+
+    </script>
+
+</body>
+</html>
